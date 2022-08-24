@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #topbox{
+           
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #e8f3fc;
+        }
+        #inbox{
+           
+            width: 740px;
+            /* padding: 5px; */
+            margin-top: 40px;
+            background-color: white;
+            /* display: flex; */
+            height: 140px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+        }
+        #content{
+           
+            width: 800px;
+            margin-left: 100px;
+            
+        }
+        #content>h1{
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+        }
+        #content>p{
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+            color: gray;
+            font-size: 15px;
+        }
+        #imgdiv{
+           
+            width: 40%;
+            height: 325px;
+        }
+        #imgdiv>img{
+            width: 100%;
+            height: 100%;
+        }
+        #inputs{
+          
+           height: 40px;
+          
+        }
+        input{
+            height: 100%;
+            margin-left: 18px;
+            width: 250px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            border-color: gray;
+            font-size: 16px;
+            padding-left: 10px;
+         
+
+        }
+        #hit{
+            margin-left: 10px;
+            height: 113%;
+            border: none;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 8px;
+            font-weight: bolder;
+            font-size: 16px;
+            background-color: #2557a7;
+            color: white;
+         
+        }
+        #labl{
+            margin-left: 18px;
+           font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+            display: flex;
+            width: 520px;
+            margin-bottom: -10px;
+            font-size: 15px;
+        }
+        #labl>h3+h3{
+            margin-left: 47%;
+        }
+        /* *****************************************************Mid Box 1***************************************************************************** */
+       .gd{
+        border: 1px solid rgb(200, 197, 197);
+       
+        border-radius: 10px;
+        padding: 10px;
+        height: 120px;
+        font-size: 15px;
+       }
+       #grid1{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 15px;
+       
+       }
+       .sal{
+        display: flex;
+        justify-content: space-between;
+       }
+       .gd>h4{
+          margin-top: 5px;
+         
+       }
+       .gd>h4>a{
+        color: black;
+        font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+       }
+       .gd>div{
+        margin-top: -24px;
+       }
+       .sal>p+p{
+        font-weight: bolder;
+        font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+       }
+       .sal>p+p>a{
+        color: black;
+        font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+       }
+       .bld>a{
+        color: gray;
+        font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+       }
+      .link>a{
+        color:#3285fa;
+        font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+      }
+     #midbox1>h1,select{
+         margin-left: 5%;
+         font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+     }
+     #midbox1>select{
+        width: 280px;
+        height: 40px;
+        font-size: 16px;
+        border: 1px solid gray;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        
+     }
+     #midbox1>select>option{
+        color:#3285fa;
+     }
+
+    </style>
+</head>
+<body>
+    <div id="con"></div>
+    <div id="topbox">
+        <div id="content">
+            <h1>Find a career you'll love</h1>
+            <p>Explore which careers have the highest job satisfaction, best salaries, and more</p>
+        
+        
+          <div id="inbox">
+            <div style="width:100% ; border:1px solid #9bb1f0;height: 10px;border-radius: 8px 8px 0px 0px;background-color: #9bb1f0;"></div>
+            <div id="labl">
+                <h3>What</h3>
+                <h3>Where</h3>
+            </div>
+            <div id="inputs">
+                <input type="text" placeholder="job title">
+                <input type="text" placeholder="India">
+                <button id="hit">Search</button>
+            </div>
+         </div>
+        </div>
+        <div id="imgdiv">
+             <img src="https://d3hbwax96mbv6t.cloudfront.net/title-webapp/_next/static/images/salaries-8d20dc14bdeae8889387e0fb40e0d546.png" alt="">
+
+        </div>
+       
+          
+    </div>
+    <!-- ******************************************************Mid Box 1******************************************************************************* -->
+    <div id="midbox1">
+        <h1>Browse top paying jobs by industry</h1>
+        <select name="" id=""><option value="">Choose an Industry</option></select>
+        <div id="grid1">
+            <div class="gd">
+                <h4><a href="">Elementry School Teacher</a></h4>
+                <div class="sal">
+                    <p class="bld"><a href="">Average Salary</a></p>
+                    <p ><a href="">₹ 2,48,568 per year</a></p>
+                </div>
+                <hr>
+                <p class="link"><a href="">Job Opening</a></p>
+            </div>
+            <div class="gd">
+                <h4><a href="">Elementry School Teacher</a></h4>
+                <div class="sal">
+                    <p class="bld"><a href="">Average Salary</a></p>
+                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                </div>
+                <hr>
+                <p class="link"><a href="">Job Opening</a></p>
+            </div>
+            <div class="gd">
+                <h4><a href="">Elementry School Teacher</a></h4>
+                <div class="sal">
+                    <p class="bld"><a href="">Average Salary</a></p>
+                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                </div>
+                <hr>
+                <p class="link"><a href="">Job Opening</a></p>
+            </div>
+            <div class="gd">
+                <h4><a href="">Elementry School Teacher</a></h4>
+                <div class="sal">
+                    <p class="bld"><a href="">Average Salary</a></p>
+                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                </div>
+                <hr>
+                <p class="link"><a href="">Job Opening</a></p>
+            </div>
+            <div class="gd">
+                <h4><a href="">Elementry School Teacher</a></h4>
+                <div class="sal">
+                    <p class="bld"><a href="">Average Salary</a></p>
+                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                </div>
+                <hr>
+                <p class="link"><a href="">Job Opening</a></p>
+            </div>
+            <div class="gd">
+                <h4><a href="">Elementry School Teacher</a></h4>
+                <div class="sal">
+                    <p class="bld"><a href="">Average Salary</a></p>
+                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                </div>
+                <hr>
+                <p class="link"><a href="">Job Opening</a></p>
+            </div>
+            <div class="gd">
+                <h4><a href="">Elementry School Teacher</a></h4>
+                <div class="sal">
+                    <p class="bld"><a href="">Average Salary</a></p>
+                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                </div>
+                <hr>
+                <p class="link"><a href="">Job Opening</a></p>
+            </div>
+            <div class="gd">
+                <h4><a href="">Elementry School Teacher</a></h4>
+                <div class="sal">
+                    <p class="bld"><a href="">Average Salary</a></p>
+                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                </div>
+                <hr>
+                <p class="link"><a href="">Job Opening</a></p>
+            </div>
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>
