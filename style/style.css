@@ -1,0 +1,132 @@
+#h1 {
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+    /* border: 1px solid red; */
+    font-style: normal;
+    margin-right: 170px;
+    margin-top: 110px;
+    margin-left: 170px;
+    padding: 40px;
+}
+
+#heading {
+    font-size: 44px;
+    line-height: 55px;
+    color: #2d2d2d;
+    font-weight: 700;
+}
+
+#access {
+    font-weight: 400;
+    size: 20px;
+    line-height: 30px;
+    color: #595959;
+}
+
+#h3 {
+
+    font-weight: 700;
+    size: 16px;
+    line-height: 10px;
+    color: #2d2d2d;
+}
+
+#h4 {
+    font-weight: 700;
+    size: 16px;
+    line-height: 18px;
+    color: #164081;
+}
+
+#input {
+    padding: 8px 150px 8px 150px;
+    border-radius: 8px;
+    border-color: grey;
+    border: 1px solid #2d2d2d;
+    font-size: 20px;
+
+
+}
+
+/* #box {
+    border: 1px solid blue;
+} */
+
+#input:hover {
+    border-color: blue;
+}
+
+#input:focus {
+    border-bottom: 5px solid blue;
+    outline: none;
+
+}
+
+/* #companies {
+    border: 1px solid black;
+} */
+
+#find {
+    padding: 8px 80px 8px 80px;
+    font-size: 20px;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid #2557a7;
+    background-color: #2557a7;
+}
+#find>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* #compare {
+    border: 1px solid brown;
+} */
+
+#rate {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    /* border: 1px solid teal; */
+    /* gap: 10px; */
+    background-color: #f5fbf9;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 6px 10px 6px 10px;
+}
+#rate img{
+   
+    width: 3%;
+    height: 25px;
+}
+/* #rate img:hover{
+background-image: ;
+} */
+#b1{
+display: flex;
+gap: 20px;
+color: #2d2d2d;
+font-size: .875rem;
+
+}
+#b1 h3>a{
+    text-decoration: none;
+    color: #2d2d2d;  
+}
+#b1 h3:hover{
+    text-decoration: underline;
+}
+#b2{
+display: flex;
+gap: 20px;
+color: #2d2d2d;
+font-size: .875rem;
+}
+#b2 h3>a{
+    text-decoration: none;
+    color: #2d2d2d;  
+}
+#b2 h3:hover{
+    text-decoration: underline;
+}
