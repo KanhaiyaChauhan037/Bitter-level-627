@@ -1,0 +1,72 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+
+}
+
+#navbar {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    width: 99%;
+    height: 55px;
+    padding: 5px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+    background-color: #2d2d2d;
+    color: white;
+    margin-bottom: 1%;
+
+}
+
+#navbar img {
+    width: 80px;
+    height: 40px;
+    padding-bottom: 5px;
+    cursor: pointer;
+
+}
+
+#first {
+    width: 40%;
+    display: flex;
+    gap: 30px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+#second {
+    width: 28%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+#second>button {
+    width: 22%;
+    height: 35px;
+    background-color: #2557a7;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+
+}
+
+#first>p:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    
+}
+
+
+#second>p:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
