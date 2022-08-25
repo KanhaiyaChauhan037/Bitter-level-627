@@ -15,20 +15,21 @@
         }
         #inbox{
            
-            width: 740px;
+            width: 800px;
             /* padding: 5px; */
             margin-top: 40px;
             background-color: white;
             /* display: flex; */
-            height: 140px;
+            height: 150px;
             justify-content: center;
             align-items: center;
             border-radius: 8px;
         }
         #content{
-           
+           /* border: 1px solid; */
             width: 800px;
-            margin-left: 100px;
+            margin-left: 70px;
+            position: relative;
             
         }
         #content>h1{
@@ -55,8 +56,8 @@
         }
         input{
             height: 100%;
-            margin-left: 18px;
-            width: 250px;
+            margin-left: 16px;
+            width: 280px;
             border: 1px solid gray;
             border-radius: 8px;
             border-color: gray;
@@ -66,7 +67,7 @@
 
         }
         #hit{
-            margin-left: 10px;
+            margin-left: 16px;
             height: 113%;
             border: none;
             padding-left: 40px;
@@ -82,7 +83,7 @@
             margin-left: 18px;
            font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
             display: flex;
-            width: 520px;
+            width: 580px;
             margin-bottom: -10px;
             font-size: 15px;
         }
@@ -91,8 +92,7 @@
         }
         /* *****************************************************Mid Box 1***************************************************************************** */
        .gd{
-        border: 1px solid rgb(200, 197, 197);
-       
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         border-radius: 10px;
         padding: 10px;
         height: 120px;
@@ -138,24 +138,212 @@
         color:#3285fa;
         font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
       }
-     #midbox1>h1,select{
+     #midbox1>h1,#click1{
          margin-left: 5%;
          font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
      }
-     #midbox1>select{
+     #click1{
+        display: flex;
+        align-items: center;
         width: 280px;
         height: 40px;
-        font-size: 16px;
+        font-size: 15px;
         border: 1px solid gray;
-        padding-left: 10px;
+        padding-left: 15px;
         padding-right: 10px;
         border-radius: 20px;
+        text-decoration: underline;
+        color: #3285fa;
         
      }
+
      #midbox1>select>option{
         color:#3285fa;
      }
-
+     hr{
+        border: -2px solid rgb(241, 240, 240)
+     }
+     /* *********************************************Mid Box2*************************************************************************** */
+     #grid2{
+        width: 89%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 15px
+     }
+     .im>img{
+        width: 60px;
+        height: 60px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+     }
+     .gd2{
+        display: flex;
+        border-radius: 10px;
+        height: 60px;
+        width: 280px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+     }
+     .rating{
+        /*  */
+        height: 40px;
+        width: 180px;
+        display: flex;
+        color: gray;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -20px;
+     }
+     .gry>a{
+        /* text-decoration: none; */
+        color: gray;
+     }
+     .about{
+        /*  */
+        margin-left: 16px;
+     }
+     .about>h4{
+    margin-top: 4px;
+    
+     }
+     .about>h4>a{
+        color: black;
+     }
+     .arrow{
+      
+      height: 20px;
+      margin-top: 20px;
+      margin-left: 20px;
+      
+     }
+     .arrow>img{
+        width: 8px;
+     }
+     #midbox2>h1,#click2{
+         margin-left: 5%;
+         font-family:"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+     }
+     #click2{
+        display: flex;
+        align-items: center;
+        width: 280px;
+        height: 40px;
+        font-size: 15px;
+        border: 1px solid gray;
+        padding-left: 15px;
+        padding-right: 10px;
+        border-radius: 20px;
+        text-decoration: underline;
+        color: #3285fa;
+        
+     }
+     #midbox2>select>option{
+        color:#3285fa;
+     }
+     /* **************************************************************Bottom box************************************************************ */
+     #bottombox{
+        width: 86%;
+        border-radius: 10px;
+        margin:auto;
+        margin-top: 60px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+     }
+     #calc{
+        
+        width: 43%;
+        margin-bottom: 18px;
+     }
+     #calc>p{
+        font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+           color: rgb(109, 108, 108);
+           font-size: 16px;
+           line-height: 26px;
+     }
+     #calc>h1{
+        font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+     }
+     #estimate{
+        background-color:#085ff7 ;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bolder;
+        color: white;
+        padding: 12px;
+        margin-top: 20px;
+     }
+     #calc>a{
+        margin-left: 6%;
+        font-size: 16px;
+        font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+        color:#3362f7;
+     }
+   /* ******************************************bb2************************************************************************************ */
+   #bb2{
+    display: flex;
+    width: 87%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    margin-top: 80px;
+   }
+   #bb2>h1{
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+   }
+   #rat{
+    /* border: 1px solid; */
+    width: 330px;
+  
+   }
+   #smile{
+    display: flex;
+    justify-content: space-around;
+   }
+   #rs{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+   }
+   /* ************************************************popup****************************************************************************** */
+   .bg-model{
+    width: 100%;
+    height: 120%;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+   }
+   .model-content{
+        width: 600px;
+        height: 350px;
+        background-color: white;
+        border-radius: 6px;
+        padding: 50px;
+        position: relative;
+   }
+   .divs{
+    display: flex;
+   }
+   .close{
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 40px;
+    font-weight: bold;
+    transform: rotate(45deg);
+    cursor:pointer
+   }
     </style>
 </head>
 <body>
@@ -189,7 +377,7 @@
     <!-- ******************************************************Mid Box 1******************************************************************************* -->
     <div id="midbox1">
         <h1>Browse top paying jobs by industry</h1>
-        <select name="" id=""><option value="">Choose an Industry</option></select>
+        <div id="click1">Choose an Industry</div>
         <div id="grid1">
             <div class="gd">
                 <h4><a href="">Elementry School Teacher</a></h4>
@@ -201,10 +389,10 @@
                 <p class="link"><a href="">Job Opening</a></p>
             </div>
             <div class="gd">
-                <h4><a href="">Elementry School Teacher</a></h4>
+                <h4><a href="">Human Resourses specialist </a></h4>
                 <div class="sal">
                     <p class="bld"><a href="">Average Salary</a></p>
-                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                    <p> <a href="">₹ 2,16,305 per year</a></p>
                 </div>
                 <hr>
                 <p class="link"><a href="">Job Opening</a></p>
@@ -267,6 +455,205 @@
         
 
     </div>
+    <!-- **********************************************Mid Box2*********************************************************************** -->
+    <div id="midbox2">
+        <h1>Browse top paying jobs by industry</h1>
+        <div id="click2">Choose an Industry</div>
+        <div id="grid2">
+            <div class="gd2">
+                <div class="im">
+                       <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/064eff7aab72cb84fbb7f92b82f6ac4a" alt="">
+                </div>
+                <div class="about">
+                    <h4><a href="">Capgemini</a></h4>
+                    <div class="rating">
+                        <p>★★★★☆</p>
+                        <p class="gry"><a href="">8.8k reviews</a></p>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="https://www.pngkit.com/png/detail/78-781065_png-file-scroll-right-arrow-icon.png" alt="">
+                </div>
+            </div>
+            <div class="gd2">
+                <div class="im">
+                       <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/13b693b4dcc055d2344351b4c9a148e9" alt="">
+                </div>
+                <div class="about">
+                    <h4><a href="">Tata Consultancy Ser...</a></h4>
+                    <div class="rating">
+                        <p>★★★★☆</p>
+                        <p class="gry"><a href="">20k reviews</a></p>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="https://www.pngkit.com/png/detail/78-781065_png-file-scroll-right-arrow-icon.png" alt="">
+                </div>
+            </div>
+            <div class="gd2">
+                <div class="im">
+                       <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/fff3cc32d7e908a657ea1da5a4a1732b" alt="">
+                </div>
+                <div class="about">
+                    <h4><a href="">Accenture</a></h4>
+                    <div class="rating">
+                        <p>★★★★☆</p>
+                        <p class="gry"><a href="">21.1k reviews</a></p>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="https://www.pngkit.com/png/detail/78-781065_png-file-scroll-right-arrow-icon.png" alt="">
+                </div>
+            </div>
+            <div class="gd2">
+                <div class="im">
+                       <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/ce43c82fedc38bf5739f8c90376c3b98" alt="">
+                </div>
+                <div class="about">
+                    <h4><a href="">Cognizant Technology...</a></h4>
+                    <div class="rating">
+                        <p>★★★★☆</p>
+                        <p class="gry"><a href="">14.9k reviews</a></p>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="https://www.pngkit.com/png/detail/78-781065_png-file-scroll-right-arrow-icon.png" alt="">
+                </div>
+            </div>
+            <div class="gd2">
+                <div class="im">
+                       <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/349d1c5aed5c3943dadc47139a21b79d" alt="">
+                </div>
+                <div class="about">
+                    <h4><a href="">Byju's</a></h4>
+                    <div class="rating">
+                        <p>★★★☆☆</p>
+                        <p class="gry"><a href="">397 reviews</a></p>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="https://www.pngkit.com/png/detail/78-781065_png-file-scroll-right-arrow-icon.png" alt="">
+                </div>
+            </div>
+            <div class="gd2">
+                <div class="im">
+                       <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/e33d1816f29251d95814fd99eae809df" alt="">
+                </div>
+                <div class="about">
+                    <h4><a href="">IBM</a></h4>
+                    <div class="rating">
+                        <p>★★★★☆</p>
+                        <p class="gry"><a href="">31.6k reviews</a></p>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="https://www.pngkit.com/png/detail/78-781065_png-file-scroll-right-arrow-icon.png" alt="">
+                </div>
+            </div>
+            <div class="gd2">
+                <div class="im">
+                       <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/3e9d43f5c277de169808abdcaf49ba2c" alt="">
+                </div>
+                <div class="about">
+                    <h4><a href="">Amazon.com</a></h4>
+                    <div class="rating">
+                        <p>★★★★☆</p>
+                        <p class="gry"><a href="">86.6k reviews</a></p>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="https://www.pngkit.com/png/detail/78-781065_png-file-scroll-right-arrow-icon.png" alt="">
+                </div>
+            </div>
+            <div class="gd2">
+                <div class="im">
+                       <img src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/128x128/5335229f1b22e90f1e5eafb892704339" alt="">
+                </div>
+                <div class="about">
+                    <h4><a href="">Indigo Airlines</a></h4>
+                    <div class="rating">
+                        <p>★★★☆☆</p>
+                        <p class="gry"><a href="">414 reviews</a></p>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="https://www.pngkit.com/png/detail/78-781065_png-file-scroll-right-arrow-icon.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- ***********************************************bottom box********************************************************************** -->
+    <div id="bottombox">
+        <div id="calc">
+            <h1>How much should you be earning?</h1>
+            <p>Get an estimated calculation of how much you should be earning and insight into your career options.</p>
+            <button id="estimate">Get  estimated pay range</button>
+            <a href="">See more details</a>
+        </div>
+        
+        <div>
+            <img src="https://d3fw5vlhllyvee.cloudfront.net/mosaic-provider-salary-calculator-entries/dist/images/src/components/ResponsiveDefaultEntry/chart_desktop_janish-36baaa.svg" alt="">
+        </div>
+
+    </div>
+    <!-- ***********************************************bb2********************************************************************************** -->
+    <div id="bb2">
+        <h1>Was this page helpful?</h1>
+        <div id="rat">
+           <div id="smile">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgZmlsbD0iIzI1NTdBNyIgc3Ryb2tlPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjQgMjVjMC0zLjMxNC0zLjEzNC02LTctNnMtNyAyLjY4Ni03IDZoMTR6Ii8+PGNpcmNsZSBjeD0iMTEiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxjaXJjbGUgY3g9IjI0IiBjeT0iMTQiIHI9IjMiIGZpbGw9IiNGRkYiLz48L2c+PC9zdmc+" alt="">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgZmlsbD0iIzI1NTdBNyIgc3Ryb2tlPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjE0IiByPSIzIiBmaWxsPSIjRkZGIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjMuNSAyNS41ODVDMjIuMjk1IDIzLjQ4IDE5Ljk4MiAyMiAxNy4zOCAyMmE2Ljk5OSA2Ljk5OSAwIDAwLTYuMTc1IDMuNzAyIi8+PC9nPjwvc3ZnPg==" alt="">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgc3Ryb2tlPSIjMjU1N0E3IiBmaWxsPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjE0IiByPSIzIiBmaWxsPSIjRkZGIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTEgMjQuNWgxMiIvPjwvZz48L3N2Zz4=" alt="">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgc3Ryb2tlPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiMyNTU3QTciLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjE0IiByPSIzIiBmaWxsPSIjRkZGIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTEgMjIuMTE3YzEuMjA3IDIuMTA1IDMuNTIgMy41ODUgNi4xMiAzLjU4NUE2Ljk5OSA2Ljk5OSAwIDAwMjMuMjk2IDIyIi8+PC9nPjwvc3ZnPg==" alt="">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgc3Ryb2tlPSIjMjU1N0E3IiBmaWxsPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjE0IiByPSIzIiBmaWxsPSIjRkZGIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMCAyMGMwIDMuMzE0IDMuMTM0IDYgNyA2czctMi42ODYgNy02SDEweiIvPjwvZz48L3N2Zz4=" alt="">
+ 
+           </div> 
+           <div id="rs">
+                <p>Not helpful</p>
+                <p>Helpful</p>
+                <p>Very helpful</p>
+        
+           </div>
+           
+        </div>
+
+    </div>
+    <!-- ***************************************************************popup****************************************************************** -->
+    <div class="bg-model">
+        <div class="model-content">
+            <div class="close">+</div>
+            <h2>Browse top paying jobs by industry</h3>
+
+            <div class="divs">
+                <div class="div1">
+                    <h4>Business Management, Administrative & Customer Support</h4>
+                    <h4>Construction & Extraction</h4>
+                    <h4>Food & Beverage</h4>
+                    <h4>Manufacturing & Utilities</h4>
+                    <h4>Personal Service</h4>
+                    <h4>Sales & Retail</h4>
+    
+                </div>
+                <div class="div2">
+                    <h4>Business Management, Administrative & Customer Support</h4>
+                    <h4>Construction & Extraction</h4>
+                    <h4>Food & Beverage</h4>
+                    <h4>Manufacturing & Utilities</h4>
+                    <h4>Personal Service</h4>
+                    <h4>Sales & Retail</h4>
+    
+                </div>
+            </div>
+            
+           
+        </div>
+    </div>
     
 </body>
 </html>
+<script src="salary.js">
+
+</script>
