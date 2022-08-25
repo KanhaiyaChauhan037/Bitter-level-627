@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Resume</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<style>
+    #box {
+        display: grid;
+        width: 90%;
+        margin: auto;
+        margin-top: 2%;
+        gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+        align-items: center;
+        /* padding: 10px; */
+    }
+
+    #box>img {
+        width: 100px;
+
+    }
+
+    #box>input:nth-child(2) {
+        width: 550px;
+        height: 7vh;
+        border: 1px solid gray;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    #box>input:nth-child(3) {
+        width: 350px;
+        height: 7vh;
+        border-radius: 10px;
+        border: 1px solid gray;
+        align-items: center;
+    }
+
+    #box1 {
+        width: 68%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    hr {
+        color: rgb(238, 227, 227);
+    }
+
+    #box3 {
+        width: 59%;
+        height: 150px;
+        padding: 20px 20px;
+        padding-top: 2px;
+        background-color:
+            #fef8f7;
+        border: 1px solid rgb(212, 212, 212);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: auto;
+        margin-right: 23%;
+        margin-top: 1%;
+        border-radius: 5px;
+        line-height: 15px;
+        margin-bottom: 8%;
+
+
+
+    }
+
+    #ser {
+        width: 150px;
+        margin-left: 55%;
+    }
+
+    #box3-1 {
+        width: 150%;
+    }
+
+    #box3-1>button {
+        width: 25%;
+        height: 7vh;
+        border-radius: 10px;
+        border: 1px solid gray;
+        background-color: white;
+        font-size: 16px;
+        color: #2557a7;
+        font-weight: bold;
+        cursor: pointer;
+
+
+
+    }
+
+    #box3-1>button:hover {
+
+        background-color: rgb(217, 228, 246);
+        border: 1px solid blue;
+    }
+
+    #box3-1>h3 {
+        font-size: 17px;
+    }
+
+    #box3-1>p {
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <div id="navbar">
+
+    </div>
+
+    <!-- down part -->
+
+
+    <div id="box">
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Indeed_logo.png/800px-Indeed_logo.png"
+            alt="">
+        <input type="text" placeholder="What Job title, skills, or company">
+        <input type="text" placeholder="Where City,state,or pincode">
+        <div><button>Search</button></div>
+
+    </div>
+    <div id="box1">
+        <h4>Limit search to:</h4>
+        <input type="checkbox">
+        <p>Job title</p>
+        <input type="checkbox">
+        <p>Skills</p>
+        <input type="checkbox" id="ch">
+        <p>Companies</p>
+        <input type="checkbox">
+        <p>Field of study</p>
+    </div>
+    <hr>
+
+    <div id="box3">
+
+        <div id="box3-1">
+            <h3>Start your free Professional trial today</h3>
+            <p>View millions of global CVs for 14 days. Contact up to 20 candidates.</p>
+            <button>Get started</button>
+        </div>
+        <div>
+            <img id="ser"
+                src="https://dmf76jm51vpov.cloudfront.net/www2/images/main/2021/free-trial/EtoosIndia-Free-Trial.png"
+                alt="">
+        </div>
+    </div>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script type="module">
+
+
+    import navbar from "./components/navbar.js";
+    document.getElementById("navbar").innerHTML = navbar();
+</script>
+
+</html>
