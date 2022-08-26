@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products for Employers</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        body {
+            font-family: Noto Sans, Helvetica Neue, Helvetica, Arial, Liberation Sans, Roboto, Noto, sans-serif;
+        }
+
+        #imge {
+            display: flex;
+            align-items: center;
+            width: 1100px;
+            height: 100px;
+            justify-content: space-between;
+            margin: auto;
+            padding-left: 20px;
+
+
+        }
+
+        #imge>img {
+            width: 320px;
+            /* height: 40px; */
+
+        }
+
+        #imge>button {
+            width: 170px;
+            height: 7vh;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 5px;
+            border: none;
+            background-color: #085ff7;
+            color: white;
+        }
+
+        #imge>button:hover {
+            background-color: #0e3881;
+            cursor: pointer;
+        }
+
+        #fte {
+            display: flex;
+            width: 1345px;
+            margin: auto;
+            /* padding: 30px; */
+            align-items: center;
+            height: 150px;
+            background-image: url("https://www.rosenthalcounsel.com/images/blog/blog-img-3.jpg");
+            color: white;
+
+        }
+
+        #fte>p {
+
+            margin-left: 10%;
+            font-size: 45px;
+            display: flex;
+            align-items: center;
+        }
+
+        #how {
+            width: 43%;
+            text-align: center;
+            margin: auto;
+            line-height: 25px;
+            color: rgb(58, 53, 53);
+
+        }
+
+        #how>p:nth-child(1) {
+            font-size: 35px;
+            margin-bottom: -2px;
+            margin-top: 7%;
+        }
+
+        #box1 {
+            display: flex;
+            width: 1050px;
+            align-items: center;
+            font-size: 18px;
+            line-height: 28px;
+            /* justify-content: space-around; */
+            gap: 40px;
+            margin: auto;
+            color: rgb(75, 71, 71);
+
+
+        }
+
+        #box1>div {
+            width: 430px;
+        }
+
+        #im>img {
+
+            width: 580px;
+            align-items: center;
+            margin-top: 2%;
+            padding: 20px;
+            margin-top: 20%;
+            padding-right: 20px;
+        }
+
+        p1 {
+            font-size: 33px;
+        }
+
+        #p2 {
+            font-size: 25px;
+            margin-bottom: -3%;
+        }
+
+        #p3 {
+            font-size: 25px;
+
+
+        }
+
+        #to {
+            margin-top: 8px;
+            margin-bottom: 10%;
+        }
+
+        span {
+            color: #255cb2;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        #sp {
+
+            margin-top: -1%;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #any {
+            margin-bottom: 10%;
+        }
+
+        #ler {
+            font-size: 15px;
+        }
+
+        #box2 {
+            display: flex;
+            width: 1050px;
+            align-items: center;
+            font-size: 19px;
+            line-height: 28px;
+            justify-content: space-around;
+            gap: 40px;
+            margin: auto;
+            color: rgb(75, 71, 71);
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+        }
+
+        #inded>p:nth-child(1) {
+            font-size: 33px;
+        }
+
+        #inded {
+            margin-left: 12%;
+        }
+
+        #inded>p:nth-child(2) {
+            margin-top: -4%;
+        }
+
+        #inded>p:nth-child(3) {
+            margin-top: 10%;
+            color: #255cb2;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #box3 {
+            display: flex;
+            width: 1050px;
+            align-items: center;
+            font-size: 19px;
+            line-height: 28px;
+            justify-content: space-around;
+            gap: 40px;
+            margin: auto;
+            color: rgb(75, 71, 71);
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        #mobile {
+            margin-right: 8%;
+        }
+
+        #mobile>p:nth-child(1) {
+            font-size: 33px;
+            margin-bottom: 1%;
+        }
+
+        #mobile>p:nth-child(3) {
+            color: #255cb2;
+            text-decoration: underline;
+            margin-top: 10%;
+        }
+
+        #mobile>p:nth-child(4) {
+            font-size: 15px;
+        }
+
+        #box4 {
+            display: flex;
+            width: 1050px;
+            align-items: center;
+            font-size: 19px;
+            line-height: 28px;
+            justify-content: space-around;
+            gap: 40px;
+            margin: auto;
+            color: rgb(75, 71, 71);
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 15%;
+        }
+
+        #feat {
+            margin-left: 5%;
+        }
+
+        #feat>p:nth-child(1) {
+            font-size: 33px;
+            margin-bottom: 1%;
+        }
+
+        #feat>p:nth-child(3) {
+            margin-top: 10%;
+        }
+
+        #box5 {
+            display: flex;
+            width: 1150px;
+            /* align-items: center; */
+            font-size: 18px;
+            line-height: 28px;
+            /* justify-content: space-around; */
+            /* gap: 40px; */
+            margin: auto;
+            color: rgb(75, 71, 71);
+            margin-top: 5%;
+            margin-bottom: 5%;
+            /* margin-left: 15%; */
+
+            padding: 20px;
+        }
+
+        #company {
+            width: 600px;
+
+            margin-left: 3%;
+
+        }
+
+        #company>p:nth-child(1) {
+            font-size: 33px;
+            margin-bottom: 1%;
+        }
+
+        #company>p:nth-child(3) {
+            margin-top: 15%;
+        }
+
+        #box5>img {
+            width: 600px;
+            margin-right: 10%;
+        }
+
+        #box6 {
+            display: flex;
+            width: 1050px;
+            align-items: center;
+            font-size: 19px;
+            line-height: 28px;
+            justify-content: space-around;
+            gap: 40px;
+            margin: auto;
+            color: rgb(75, 71, 71);
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 10%;
+        }
+
+        #indeed {
+            margin-left: 2%;
+        }
+
+        #indeed>p:nth-child(1) {
+            font-size: 33px;
+            margin-bottom: 1%;
+        }
+
+        #indeed>p:nth-child(3) {
+            margin-top: 10%;
+        }
+
+        #box7 {
+            height: 140px;
+            background-color: #e8f3fc;
+            display: flex;
+            /* justify-content: space-between; */
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+        }
+
+        #box7>div {
+            width: 250px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #box7>div>button {
+            width: 200px;
+            height: 7vh;
+            font-size: 17px;
+            color: white;
+            background-color: #255cb2;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #box7>div>button:hover {
+            background-color: #14376f;
+        }
+
+        #f {
+            transform: rotate(90deg);
+            width: 130px;
+
+        }
+
+        #footer {
+            display: flex;
+            width: 100%;
+            /* gap: 40px; */
+            justify-content: space-around;
+            background-color: #f3f2f1;
+            margin-top: 5%;
+            padding-bottom: 40px;
+            padding-top: 20px;
+
+        }
+
+        #right {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        #footer>div>p {
+            width: 90%;
+        }
+
+        #footer>div>button {
+            background-color: white;
+            width: 30%;
+            height: 35px;
+            font-size: 18px;
+            font-weight: bold;
+            /* padding:10px; */
+            border: 1px solid gray;
+            color: #2557a7;
+            border-radius: 8px;
+            margin-left: 15px;
+        }
+
+        #right>div>p {
+            font-size: 13px;
+            cursor: pointer;
+            color: gray;
+        }
+
+        #right>div>p:hover {
+            color: black;
+        }
+
+        #footer>div>button:hover {
+            cursor: pointer;
+            background-color: #bccfed;
+        }
+
+        #footer>div>button:nth-child(3) {
+            width: 24%;
+        }
+
+        #foot {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            align-items: center;
+            font-size: 12px;
+            justify-content: space-between;
+        }
+
+        #foot>div {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #foot>div:hover {
+            color: #2557a7;
+            /* background-color: #0d2d5e; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div id="imge">
+        <img src="https://indeed.force.com/employerSupport1/servlet/servlet.ImageServer?id=0151R000004Z4O6&oid=00D36000000pILY&lastMod=1557519918000"
+            alt="">
+        <button>Contact us</button>
+    </div>
+
+    <div id="fte">
+        <p>Products for Employers</p>
+    </div>
+    <div id="how">
+        <p>How Indeed helps you hire</p>
+        <p>Indeed helps you connect with talent, on desktop and mobile, so you can make more quality hires faster.</p>
+    </div>
+
+    <div id="box1">
+        <div>
+            <p1>Post Jobs</p1>
+            <p id="p2">Get started for free</p>
+            <p id="any">Anyone can <span>post jobs for free.*</span> Post jobs directly on Indeed or through your
+                company career site or ATS.</p>
+            <p3 id="p3">Invest to find the right fit faster</p3>
+            <p id="to">To attract more candidates, pay to promote your jobs as <span>Sponsored listings.</span>
+                Sponsored Jobs are prominently displayed in search results, and they receive up to 4.5X more clicks.</p>
+            <p><span id="ler">Learn more about posting a job</span></p>
+            <p><span id="ler">* Terms, conditions, quality standards and usage limits apply.</span></p>
+            <p id="sp">Source: Indeed data (worldwide)</p>
+        </div>
+        <div id="im">
+            <img src="https://d341ezm4iqaae0.cloudfront.net/assets/sites/39/2015/12/29151128/content-img-4-en_in.png"
+                alt="">
+        </div>
+
+
+    </div>
+    <hr>
+    <div id="box2">
+        <img src="https://d341ezm4iqaae0.cloudfront.net/assets/sites/39/2015/12/29151130/content-img-5.jpg" alt="">
+        <div id="inded">
+            <p>Indeed Resume</p>
+            <p>With more than 200 million <span>resumes</span>, you can find unlimited candidates in every field and
+                target your resume search for free.</p>
+            <p>Learn more about hiring with Indeed Resume</p>
+        </div>
+    </div>
+    <hr>
+    <div id="box3">
+        <div id="mobile">
+            <p>Mobile Recruiting</p>
+            <p>Make it easy for people to apply directly to your jobs from any device. Get up to 4X the number of
+                candidates when you <span> accept mobile applications</span> from Indeed.</p>
+            <p>Learn more about your mobile recruiting options</p>
+            <p>Source: Indeed data (worldwide)</p>
+        </div>
+        <img src="https://d341ezm4iqaae0.cloudfront.net/assets/sites/39/2015/12/29151132/content-img-6-en_in.png"
+            alt="">
+
+    </div>
+    <hr>
+
+    <div id="box4">
+        <img src="https://d341ezm4iqaae0.cloudfront.net/assets/sites/39/2015/12/29151135/content-img-7.png" alt="">
+        <div id="feat">
+            <p>Featured Employer</p>
+            <p>Give your jobs more visibility in search results as a <span> Featured Employer.</span> Receive prominent
+                logo placement with links to your Company Page and Sponsored Jobs.</p>
+            <p><span>Learn more about Featured Employer</span> </p>
+        </div>
+    </div>
+    <hr>
+
+    <div id="box5">
+        <div id="company">
+            <p> Company Pages</p>
+            <p>Claim your <span>Company Page </span> to unlock employer-only features and add a company description,
+                logo, photos and more.</p>
+            <p> <span>Start building your brand with Company Pages</span> </p>
+        </div>
+        <img src="https://d341ezm4iqaae0.cloudfront.net/assets/sites/39/2015/12/29151137/content-img-8-en_in.png"
+            alt="">
+    </div>
+    <hr>
+
+    <div id="box6">
+
+        <img src="https://d341ezm4iqaae0.cloudfront.net/assets/sites/39/2015/12/29151529/Indeed_Assessments_SlashHire_en_GB.png"
+            alt="">
+
+        <div id="indeed">
+            <p>Indeed Assessments</p>
+            <p>Indeed Assessments offers ready-to-go candidate assessments to help you quickly see which candidates have
+                the skills that you need. Now, you can spend less time sifting through resumes and more time connecting
+                with the right talent.</p>
+            <p><span>Learn more about Indeed Assessments</span></p>
+        </div>
+
+    </div>
+
+    <div id="box7">
+        <div>
+            <p>Ready to post a job today?
+                Get started in 5 minutes.</p>
+            <button>Post a job</button>
+        </div>
+        <hr id="f">
+        <div>
+            <p>Ready to post a job today?
+                Get started in 5 minutes.</p>
+            <button>Post a job</button>
+        </div>
+    </div>
+
+
+    <!-- footer part -->
+
+
+    <div id="footer">
+        <div>
+            <h1>We're here to help</h1>
+            <p>Visit our Help Center for answers to common questions or contact us directly.</p>
+
+
+            <button>Help center</button>
+            <button>Contact support</button>
+
+        </div>
+
+        <div id="right">
+            <div>
+                <h3>Indeed</h3>
+                <p>About Indeed</p>
+                <p>Press</p>
+                <p>Security</p>
+                <p>Cookies</p>
+                <p>Terms</p>
+                <p>Privacy center</p>
+                <p>Privacy policy</p>
+                <p>Accessibility at Indeed</p>
+                <p>Work at Indeed</p>
+                <p>Countries
+                </p>
+                <p>Sitemap</p>
+
+            </div>
+            <div>
+                <h3>Employers</h3>
+                <p>Post a job</p>
+                <p>Products</p>
+                <p>Pricing</p>
+                <p>Indeed Insights</p>
+                <p>FAQ</p>
+            </div>
+            <div>
+                <h3>Resources</h3>
+                <p>Hiring resources</p>
+                <p>How to write job descriptions</p>
+                <p>Guide to hiring with Indeed</p>
+                <p>Indeed Events</p>
+            </div>
+
+        </div>
+    </div>
+    <div id="foot">
+
+        <p>© 2022 Indeed</p>
+        <div>
+            <img src="https://d34k7i5akwhqbd.cloudfront.net/allspark/static/images/icon-footer-ios-c1084f.svg" alt="">
+
+            <img src="https://d34k7i5akwhqbd.cloudfront.net/allspark/static/images/icon-footer-android-7a4367.svg"
+                alt="">
+
+            <img src="https://d34k7i5akwhqbd.cloudfront.net/allspark/static/images/icon-footer-facebook-fa796a.svg"
+                alt="">
+
+            <img src="https://d34k7i5akwhqbd.cloudfront.net/allspark/static/images/icon-footer-twitter-cc3f5c.svg"
+                alt="">
+
+            <img src="https://d34k7i5akwhqbd.cloudfront.net/allspark/static/images/icon-footer-linkedin-ece97a.svg"
+                alt="">
+
+            <img src="https://d34k7i5akwhqbd.cloudfront.net/allspark/static/images/icon-footer-youtube-b0cacb.svg"
+                alt="">
+
+            <img src="https://d34k7i5akwhqbd.cloudfront.net/allspark/static/images/icon-footer-instagram-2827d1.svg"
+                alt="">
+        </div>
+
+    </div>
+
+
+</body>
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+    document.getElementById("navbar").innerHTML = navbar();
+</script>
+
+</html>
