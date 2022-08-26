@@ -35,6 +35,7 @@ let me = [
         image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/13b693b4dcc055d2344351b4c9a148e9`,
         title: "TCS",
         rating: "★★★☆☆",
+        dis: "Tata Consultancy Services is an IT services, consulting, and business solutions organization that delivers real results to global business.",
         sal: "salary",
         que: "questions",
         opn: "Open Jobs",
@@ -80,22 +81,22 @@ let append = () => {
     me.forEach(el => {
         // console.log(me);
         let div = document.createElement("div");
-        div.setAttribute("id","div");
+        div.setAttribute("id", "div");
 
-        let b=document.createElement("div");
-        b.setAttribute("id","b");
+        let b = document.createElement("div");
+        b.setAttribute("id", "b");
 
         let bx = document.createElement("div");
-        bx.setAttribute("id","bx");
+        bx.setAttribute("id", "bx");
 
         let bx1 = document.createElement("div");
-        bx1.setAttribute("id","bx1");
+        bx1.setAttribute("id", "bx1");
 
         let bx2 = document.createElement("div");
-        bx2.setAttribute("id","bx2");
+        bx2.setAttribute("id", "bx2");
 
         let img = document.createElement("img");
-        img.setAttribute("id","img");
+        img.setAttribute("id", "img");
         img.src = el.image;
 
         let title = document.createElement("p");
@@ -115,12 +116,13 @@ let append = () => {
         opn.innerText = el.opn;
 
         bx.append(img);
-        bx1.append(title,rating);
-        b.append(bx,bx1);
+        bx1.append(title, rating);
+        b.append(bx, bx1);
         bx2.append(sal, que, opn);
-        div.append(b,bx2);
+        div.append(b, bx2);
         container.append(div);
     })
 };
 
 append();
+
