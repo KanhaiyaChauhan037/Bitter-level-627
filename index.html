@@ -7,13 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOB SEARCH INDIA</title>
     <style>
-        /* -----------------------NAVBAR----------------------- */
+        /* --------------------------------NAVBAR-------------------------------- */
         * body {
             margin: 0;
             padding: 0px;
             background-color: rgb(240, 238, 238);
             width: 100%;
-
         }
 
         #navbar {
@@ -27,16 +26,12 @@
             padding: 4px 0px;
             border-bottom: 1px solid gray;
             /* position: relative; */
-
-
         }
 
         #img1 {
             width: 150px;
             height: 50px;
             padding: 5px;
-
-
         }
 
         #img2 {
@@ -44,8 +39,6 @@
             height: 48px;
             padding: 5px;
             margin-left: -20px;
-
-
         }
 
         p1 {
@@ -73,10 +66,101 @@
             cursor: pointer;
         }
 
+        /* BODY PART */
+        #third {
+            /* border:1px solid red; */
+            width: 100%;
+            height: 300px;
+        }
+
+        .third1 {
+            /* border:1px solid blue; */
+            width: 100%;
+            height: 50px;
+            margin-left: 15%;
+            margin-top: 50px;
+        }
+
+        .third2 {
+            /* border:1px solid green; */
+            width: 50%;
+            height: 100px;
+            margin-left: 35%;
+        }
+
+        input {
+            width: 400px;
+            height: 40px;
+            gap: 30px;
+            border-radius: 10px;
+            border-color: rgb(177, 175, 175);
+        }
+
+        #btn {
+            width: 100px;
+            height: 45px;
+            border-radius: 10px;
+            background-color: #356cc4;
+            margin-left: 10px;
+            color: #FFFFFF;
+            font-size: 15px;
+            border-color: #356cc4;
+        }
+
+        #btn:hover {
+            background-color: #2557A7;
+        }
+
+        span {
+            color: blue;
+            font-size: 20px;
+        }
+
+        #spn {
+            border: 1px solid green;
+            width: 40%;
+            margin: auto;
+
+        }
+
+        .p1 {
+            font-size: 20px;
+            color: rgb(78, 77, 77);
+        }
+
+        #forth {
+            /* border:1px solid green;   */
+
+            width: 65%;
+            height: 300px;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            margin: auto;
+        }
+
+        #forth>h1 {
+            margin-left: 300px;
+        }
+
+        button {
+            height: 50px;
+            width: 150px;
+            background-color: rgb(190, 187, 187);
+            margin-left: 15px;
+            font-size: 15px;
+            border-color: rgb(190, 187, 187);
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(156, 155, 155);
+        }
 
         /* -----------------------FOOTER----------------------- */
         #bottom {
             background-color: #FFFFFF;
+            margin-top: 16%;
         }
 
         #scnd {
@@ -107,13 +191,15 @@
             margin-top: 30px;
 
         }
-        #b1 h3:hover{
-            text-decoration: underline ;
+
+        #b1 h3:hover {
+            text-decoration: underline;
             cursor: pointer;
         }
-        #b1 h3>a{
+
+        #b1 h3>a {
             text-decoration: none;
-            color:black;
+            color: black;
         }
 
         #b2 {
@@ -122,18 +208,21 @@
             color: #2d2d2d;
             font-size: .875rem;
         }
-        #b2 h3:hover{
-            text-decoration: underline ;
+
+        #b2 h3:hover {
+            text-decoration: underline;
             cursor: pointer;
         }
-        #b2 h3>a{
+
+        #b2 h3>a {
             text-decoration: none;
-            color:black;
+            color: black;
         }
 
 
         #fst {
-            /* border:1px solid black; */
+
+            padding-top: 50px;
             width: 30%;
             height: 30px;
             margin: auto;
@@ -176,7 +265,7 @@
 </head>
 
 <body>
-    <!-- -----------------------NAVBAR-----------------------  -->
+    <!-- --------------------------------NAVBAR--------------------------------  -->
 
     <body>
         <div id="navbar">
@@ -197,7 +286,42 @@
             </div>
         </div>
 
-        <!-- -----------------------FOOTER-----------------------  -->
+        <!--------------------------------------BODY PART ------------------------------------>
+        <div id="third">
+            <div class="third1">
+                <input type="text" placeholder="  What    Job title, keyboards, or company">
+
+                <input type="text" placeholder=" Where     City, or pin code">
+                <button id="btn">Find Jobs</button>
+            </div>
+
+            <div class="third2">
+
+                <p class="p1"><span>Post your resume - </span>It only takes a few seconds</p>
+                <p class="p1"><span>Employers: Post a job -</span>Your next hire is here</p>
+
+            </div>
+
+            <div id="forth">
+                <h1>popular searches</h1>
+                <div>
+                    <!-- <button style="margin-top: -20px;">software developer fresher</button> -->
+                    <button>Work from Home</button>
+                    <button>driver</button>
+                    <button>hr fresher</button>
+                    <button>software testing</button>
+                    <button>sales executive</button>
+                </div>
+                <div>
+
+                    <button>business analyst</button>
+                    <button>receptionist</button>
+                    <button>data analyst</button>
+                    <button>seo executive</button>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------footer. ------------------------------------>
         <div id="bottom">
 
             <div id="fst">
