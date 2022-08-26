@@ -8,112 +8,7 @@
     <title>Find Resume</title>
     <link rel="stylesheet" href="navbar.css">
 </head>
-<style>
-    #box {
-        display: grid;
-        width: 90%;
-        margin: auto;
-        margin-top: 2%;
-        gap: 15px;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: space-evenly;
-        align-items: center;
-        /* padding: 10px; */
-    }
-
-    #box>img {
-        width: 100px;
-
-    }
-
-    #box>input:nth-child(2) {
-        width: 550px;
-        height: 7vh;
-        border: 1px solid gray;
-        align-items: center;
-        border-radius: 10px;
-    }
-
-    #box>input:nth-child(3) {
-        width: 350px;
-        height: 7vh;
-        border-radius: 10px;
-        border: 1px solid gray;
-        align-items: center;
-    }
-
-    #box1 {
-        width: 68%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    hr {
-        color: rgb(238, 227, 227);
-    }
-
-    #box3 {
-        width: 59%;
-        height: 150px;
-        padding: 20px 20px;
-        padding-top: 2px;
-        background-color:
-            #fef8f7;
-        border: 1px solid rgb(212, 212, 212);
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        margin: auto;
-        margin-right: 23%;
-        margin-top: 1%;
-        border-radius: 5px;
-        line-height: 15px;
-        margin-bottom: 8%;
-
-
-
-    }
-
-    #ser {
-        width: 150px;
-        margin-left: 55%;
-    }
-
-    #box3-1 {
-        width: 150%;
-    }
-
-    #box3-1>button {
-        width: 25%;
-        height: 7vh;
-        border-radius: 10px;
-        border: 1px solid gray;
-        background-color: white;
-        font-size: 16px;
-        color: #2557a7;
-        font-weight: bold;
-        cursor: pointer;
-
-
-
-    }
-
-    #box3-1>button:hover {
-
-        background-color: rgb(217, 228, 246);
-        border: 1px solid blue;
-    }
-
-    #box3-1>h3 {
-        font-size: 17px;
-    }
-
-    #box3-1>p {
-        font-size: 15px;
-    }
-</style>
+<link rel="stylesheet" href="findresume.css">
 
 <body>
     <div id="navbar">
@@ -161,7 +56,28 @@
 
     <hr>
 
+    <div id="foot">
 
+        <div id="seh">
+            <h4>Find CVs in</h4>
+            <select id="sel">
+                <option>India</option>
+                <option>France</option>
+                <option>Italia</option>
+                <option>Hong kong</option>
+                <option>Indonasiya</option>
+                <option>United State</option>
+                <option>Malesiya</option>
+                <option>Maxico</option>
+                <option>Nedarland</option>
+                <option>New Zeeland</option>
+            </select>
+        </div>
+        <div id="footer">
+            <P>About - Contact Indeed</P>
+            <p>© 2022 Indeed - Cookies, Privacy and Terms</p>
+        </div>
+    </div>
 
 
 
