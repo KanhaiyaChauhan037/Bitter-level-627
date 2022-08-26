@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        bod{
+            background-color: skyblue;
+        }
         #topbox{
            
             width: 100%;
@@ -161,7 +164,7 @@
         color:#3285fa;
      }
      hr{
-        border: -2px solid rgb(241, 240, 240)
+       border: -1px solid gray;
      }
      /* *********************************************Mid Box2*************************************************************************** */
      #grid2{
@@ -315,25 +318,33 @@
    /* ************************************************popup****************************************************************************** */
    .bg-model{
     width: 100%;
-    height: 120%;
+    height: 300%;
     background-color:rgba(0, 0, 0, 0.7);
     position: absolute;
-    top: 300px;
+    top: 0px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     display: none;
    }
    .model-content{
-        width: 600px;
+        width: 650px;
         height: 350px;
+        margin-top: 140px;
+        margin-left: 400px;
         background-color: white;
         border-radius: 6px;
         padding: 50px;
-        position: relative;
+        position: fixed;
+   }
+   .model-content>h2{
+    margin-left: 5%;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
    }
    .divs{
     display: flex;
+    justify-content: space-around;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
    }
    .close{
     position: absolute;
@@ -343,6 +354,72 @@
     font-weight: bold;
     transform: rotate(45deg);
     cursor:pointer
+   }
+   /* **************************************footer******************************************************************************** */
+   #footer{
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+    margin-top: 60px;
+    width: 95%;
+    justify-content: space-around;
+    padding: 40px;
+    display: flex;
+    background-color: #eff2f6;
+   }
+   /* **********************************************blkfoot***************************************************************************** */
+   #foot{
+    background-color: black;
+    padding: 30px;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+   }
+   #blkfoot{
+    border: 1px solid black;
+    background-color: black;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 95%;
+   }
+   #first>img{
+    margin-top: 6px;
+    width: 180px;
+   }
+   #third{
+    margin-top: 43px;
+   }
+   #fourth{
+    margin-top: 43px;
+   }
+   #fifth>div{
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   }
+   #im1{
+    width: 20px;
+   }
+   #im2{
+    width: 25px;
+   }
+   #im3{
+    width: 18px;
+   }
+   #im4{
+    width: 20px;
+    height: 25px;
+   }
+   #anchor{
+    width: 50%;
+    margin-left: 170px;
+    background-color: black;
+   }
+   #anchor>a{
+    color: white;
+   }
+   #abc{
+    text-decoration: none;
    }
     </style>
 </head>
@@ -398,55 +475,55 @@
                 <p class="link"><a href="">Job Opening</a></p>
             </div>
             <div class="gd">
-                <h4><a href="">Elementry School Teacher</a></h4>
+                <h4><a href="">Accountant</a></h4>
                 <div class="sal">
                     <p class="bld"><a href="">Average Salary</a></p>
-                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                    <p> <a href="">₹ 2,69,338 per year</a></p>
                 </div>
                 <hr>
                 <p class="link"><a href="">Job Opening</a></p>
             </div>
             <div class="gd">
-                <h4><a href="">Elementry School Teacher</a></h4>
+                <h4><a href="">Customer Care specialist</a></h4>
                 <div class="sal">
                     <p class="bld"><a href="">Average Salary</a></p>
-                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                    <p> <a href="">₹ 2,59,568 per year</a></p>
                 </div>
                 <hr>
                 <p class="link"><a href="">Job Opening</a></p>
             </div>
             <div class="gd">
-                <h4><a href="">Elementry School Teacher</a></h4>
+                <h4><a href="">Office Assistant</a></h4>
                 <div class="sal">
                     <p class="bld"><a href="">Average Salary</a></p>
-                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                    <p> <a href="">₹ 1,88,778 per year</a></p>
                 </div>
                 <hr>
                 <p class="link"><a href="">Job Opening</a></p>
             </div>
             <div class="gd">
-                <h4><a href="">Elementry School Teacher</a></h4>
+                <h4><a href="">Back Office Executive</a></h4>
                 <div class="sal">
                     <p class="bld"><a href="">Average Salary</a></p>
-                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                    <p> <a href="">₹ 3,48,568 per year</a></p>
                 </div>
                 <hr>
                 <p class="link"><a href="">Job Opening</a></p>
             </div>
             <div class="gd">
-                <h4><a href="">Elementry School Teacher</a></h4>
+                <h4><a href="">Data Entry Clerk </a></h4>
                 <div class="sal">
                     <p class="bld"><a href="">Average Salary</a></p>
-                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                    <p> <a href="">₹ 2,50,368 per year</a></p>
                 </div>
                 <hr>
                 <p class="link"><a href="">Job Opening</a></p>
             </div>
             <div class="gd">
-                <h4><a href="">Elementry School Teacher</a></h4>
+                <h4><a href="">Graphic Designer</a></h4>
                 <div class="sal">
                     <p class="bld"><a href="">Average Salary</a></p>
-                    <p> <a href="">₹ 2,48,568 per year</a></p>
+                    <p> <a href="">₹ 2,60,868 per year</a></p>
                 </div>
                 <hr>
                 <p class="link"><a href="">Job Opening</a></p>
@@ -629,21 +706,21 @@
 
             <div class="divs">
                 <div class="div1">
-                    <h4>Business Management, Administrative & Customer Support</h4>
-                    <h4>Construction & Extraction</h4>
-                    <h4>Food & Beverage</h4>
-                    <h4>Manufacturing & Utilities</h4>
-                    <h4>Personal Service</h4>
-                    <h4>Sales & Retail</h4>
+                    <h4><a href="">All Industries</a></h4>
+                    <h4><a href="">Construction & Extraction</a></h4>
+                    <h4><a href="">Food & Beverage</a></h4>
+                    <h4><a href="">Manufacturing & Utilities</a></h4>
+                    <h4><a href="">Personal Service</a></h4>
+                    <h4><a href="">Sales & Retail</a></h4>
     
                 </div>
                 <div class="div2">
-                    <h4>Business Management, Administrative & Customer Support</h4>
-                    <h4>Construction & Extraction</h4>
-                    <h4>Food & Beverage</h4>
-                    <h4>Manufacturing & Utilities</h4>
-                    <h4>Personal Service</h4>
-                    <h4>Sales & Retail</h4>
+                    <h4><a href="">Agriculture, Fishing & Forestry</a></h4>
+                    <h4><a href="">Cleaning & Grounds Maintenance</a></h4>
+                    <h4><a href="">Education & Instruction</a></h4>
+                    <h4><a href="">Healthcare</a></h4>
+                    <h4><a href="">Marketing, Advertising & Public Relations</a></h4>
+                    <h4><a href="">Repair, Maintenance & Installation</a></h4>
     
                 </div>
             </div>
@@ -651,7 +728,90 @@
            
         </div>
     </div>
+
+    <!-- ****************************************************footer***************************************************************** -->
+    <div id="footer">
+           <h2>Frequently searched careers</h2>
+           <div>
+              <p><a href="">Security Guard</a></p>
+              <p><a href="">Software Engineer</a></p>
+              <p><a href="">Accountant</a></p>
+              <p><a href="">Data Entry Clerk</a></p>
+              <p><a href="">Driver</a></p>
+              <p><a href="">Teacher</a></p>
+              <p><a href="">Nurse</a></p>
+              <p><a href="">Laboratory Technician</a></p>
+
+           </div>
+           <div>
+            <p><a href="">Full Stack Developer</a></p>
+            <p><a href="">Physiotherapist</a></p>
+            <p><a href="">Back Office Executive</a></p>
+            <p><a href="">Assistant Professor</a></p>
+            <p><a href="">CNC Operator</a></p>
+            <p><a href="">Electrical Engineer</a></p>
+            <p><a href="">Radiologist</a></p>
+            <p><a href="">Medical Representative</a></p>
+
+           </div>
+           <div>
+            <p><a href="">Data Analyst</a></p>
+            <p><a href="">Web Developer</a></p>
+            <p><a href="">Collector</a></p>
+            <p><a href="">Office Assistant</a></p>
+            <p><a href="">Police Officer</a></p>
+            <p><a href="">Flight Attendant</a></p>
+            <p><a href="">School Teacher</a></p>
+            <p><a href="">Medical Officer</a></p>
+
+           </div>
+
+    </div>
+<!-- ******************************************************** -->
+   <div id="foot">
+
+   
+     <div id="blkfoot">
+          <div id="first">
+            <img src="data:image/png;base64,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" alt="">
+          </div>
+          
+          <div id="sec">
+            <h3>Explore Indeed</h3>
+            <p>Career Explorer</p>
+            <p>Career Advice</p>
+            <p>Browse Jobs</p>
+
+          </div>
+          <div id="third">
+            <p>Browse Companies</p>
+            <p>Salaries</p>
+            <p>Indeed Events</p>
+
+          </div>
+          <div id="fourth">
+            <p>Work at Indeed</p>
+            <p>Countries</p>
+            <p>About</p>
+
+          </div>
+          <div id="fifth">
+            <h3>Follow us</h3>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT05zJ_zxvRVks8t2ItseL2pXgPbtppviuOVw&usqp=CAU" alt="" id="im1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_nF50viKz0HPd6HccEJkgv9ch7irQCqhddA&usqp=CAU" alt="" id="im2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhYoprKESBLKqTWJca8aRpOfh5ueUwqRAKMg&usqp=CAU" alt="" id="im3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt28Tjz9teES372ssbDkE2ID6AFLfNBIv1aw&usqp=CAU" alt="" id="im4">
+            </div>
+          </div>
+
+    </div>
+    <div id="anchor"> 
+        <a id="abc" href="">© 2021 Indeed</a> - <a href="https://in.indeed.com/accessibility?hl=en&from=gnav-title-webapp">Accessibility at Indeed</a> - <a href="">Privacy Center</a> - <a href="">Cookies</a> - <a href="">Privacy</a>
+    </div>
     
+</div> 
+   
 </body>
 </html>
 <script src="salary.js">
