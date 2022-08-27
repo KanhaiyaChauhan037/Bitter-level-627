@@ -24,6 +24,7 @@
             /* padding-top: -10px; */
             background-color: white;
             border-radius: 10px;
+            margin-bottom: 5%;
         }
 
         #ig {
@@ -94,6 +95,52 @@
             text-decoration: none;
             color: rgba(50, 49, 49, 0.963);
         }
+
+
+        /*  */
+        #thrd {
+            width: 30%;
+            height: 120px;
+            margin: auto;
+            margin-top: 30%;
+        }
+
+
+        #b1 {
+            display: flex;
+            gap: 20px;
+            color: #2d2d2d;
+            font-size: .875rem;
+            margin-top: 30px;
+
+        }
+
+        #b1 h3:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #b1 h3>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #b2 {
+            display: flex;
+            gap: 20px;
+            color: #2d2d2d;
+            font-size: .875rem;
+        }
+
+        #b2 h3:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #b2 h3>a {
+            text-decoration: none;
+            color: black;
+        }
     </style>
 </head>
 
@@ -119,6 +166,28 @@
             details with Indeed like your name, profile picture, public profile information, and email address.</p>
     </div>
 
+    <div id="b1">
+
+        <h3><a href="https://in.indeed.com/career-advice">Career Advice</a></h3>
+        <h3><a href="https://in.indeed.com/browsejobs">Browse Jobs</a></h3>
+        <h3><a href="https://in.indeed.com/companies/browse-companies">Browse Companies</a></h3>
+        <h3><a href="https://in.indeed.com/career/salaries">Salaries</a></h3>
+        <h3><a href="https://www.indeedevents.com/en-in/">Indeed Events</a></h3>
+        <h3><a href="https://www.indeed.jobs/">Work at Indeed</a></h3>
+        <h3><a href="https://in.indeed.com/worldwide">Countries</a></h3>
+        <h3><a href="https://in.indeed.com/about">About</a></h3>
+        <h3><a href="https://support.indeed.com/hc/en-in?redirect=false">Help Center</a></h3>
+    </div>
+    <div id="b2">
+        <h3>© 2022 Indeed</a></h3>
+        <h3><a href="https://in.indeed.com/accessibility?hl=en">Accessibility at Indeed</a></h3>
+        <h3><a href="https://hrtechprivacy.com/">Privacy Center</a></h3>
+        <h3><a href="https://hrtechprivacy.com/brands/indeed#Cookies">Cookies</a></h3>
+        <h3><a href="https://hrtechprivacy.com/brands/indeed#privacypolicy">Privacy</a></h3>
+        <h3><a href="https://in.indeed.com/legal?hl=en">Terms</a></h3>
+    </div>
+
+
 </body>
 <script>
 
@@ -131,11 +200,14 @@ em.innerHTML= null;
 em.innerText= email;
 
 
+document.getElementById("col").addEventListener("click",function(){
 
-   let  singin=()=>{
+    location.href="sign-in3.html"
+})
 
 
-    window.location.href="signin.html";
-    }
+
+  
+
 </script>
 </html>
