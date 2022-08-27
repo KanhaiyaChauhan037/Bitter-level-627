@@ -1,0 +1,364 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jobsearch</title>
+    <style>
+      #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        padding: 10px;
+      }
+      
+      #main>img{
+       width: 15%;
+        
+      }
+      #main{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+      }
+      #right{
+        display: flex;
+        width: 40%;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 10px;
+      }
+      #right>a>img{
+        width: 40%;
+      }
+      #main>img:nth-child(2){
+        width: 10%;
+      }
+      #main>a{
+        font-size: 20px;
+        color:rgb(34, 31, 31);
+        padding: 10px;
+      }
+      #right>a{
+        margin: -20px;
+        margin-right: 10px;
+      }
+      #main>a:hover{
+        background-color: darkgrey;
+        border-radius: 5px;
+      }
+      #search{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-top: 90px;
+       gap: 10px;    
+      }
+      #search>input{
+        padding: 15px 90px;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-weight: bolder;
+      }
+      #search>button{
+       padding: 15px 15px;
+       border-radius: 5px;
+       border: transparent;
+       background-color: #2557a7;
+       color:white;
+       font-weight: bolder;
+      }
+      #resume{
+        width: 30%;
+        height: 10%;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #resume>a{
+       display: block;
+       margin-bottom: 30px;
+       font-size: 22px;
+       color: #2557a7;
+       font-weight: bolder;
+      }
+      #container{
+        width: 80%;
+        margin: auto;
+        margin-top: 70px;
+        
+      }
+      #container>div{
+        width: 70%;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+       
+      }
+      #container>div>p{
+        color: gray;
+        font-weight: bold;
+      }
+      .left>h4{
+        color: gray;
+        margin-top: -5px;
+        
+      }
+      .left>a{
+        margin-right: 20px;
+        padding: 2px 5px;
+        background-color: #f3f2f1;
+        cursor:pointer;
+        border-radius: 5px;
+
+      }
+      .left>a:hover{
+        background-color: gray;
+      }
+      #rohit{
+        display: flex;
+        gap: 10px;
+        border: 1px solid red;
+        margin-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      #cont{
+        width: 60%;
+        height: 800px;
+        margin-top: 60px;
+        overflow: scroll;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+      }
+      #cont>div{
+        margin: 10px;
+        padding: 20px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      }
+    </style>
+</head>
+<body>
+    <!-- <div id="navbar">
+        <div id="main">
+        <img src="data:image/png;base64,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" alt="err">
+        <img src="https://d3fw5vlhllyvee.cloudfront.net/dist/header/ukraine_support.7ad2b5d444bc427dbc5d.png" alt="err">
+        <a href="/">Find jobs</a>
+        <a href="/">Company review</a>
+        <a href="/">Salary guide</a>
+        </div>
+        <div id="right">
+            <a href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAeFBMVEX///8Ahfj///wAgfgAg/j///r///gAf/gAe/UAe/cAhPUAePYAfvXy+f/x9/szjfZboPa41fcAdPaOvvhbpfiXxPbQ4/n3/fvl8f2v0PqFvPdpqvZPnvpBlfc8kfjq9Pp4s/mhyPPZ6ffE4PiixfXd7/UQh/PN3/tlqtROAAADrUlEQVRoge2ZaZOqOhCGMQsJkGEZQFRwARn8///wJICOeqJDljm36lYeP6UQX7vT6XTSnudwOBwOh8PhcDgcDgkAc6qYU2HA+Vey1Wa93dXN/pBwDvum3m3XG+/X9f1jdmoGGhCI0EqAEIIkoGFzyo7412SBX7XpKoKrvwlXCAZh2sbgd+TPRUCQRPcGYrQ+W/c7ANskeKs7qwdJ5ltU5yGcJST8WXgUJ0Nmz+ugK9gCi7/93nSWhEEJZaH1BoLKyobXNw1VMHk2nKZf5spnpmjyLI7OhjMOtp86woLPrZE2LiNd5VUY5Vh/wkFOtJU5NNeWxj0zUeb5pdf1eaYVYPewTE/5y8jbs+EbHWVwUF7OEumDhstxTs2VeWLL1aU3VpRXKFJPa7VxjE3AVNXl62DhJvkjdK0oXVgymptdqJndWYjuK0xp9wY7szz2gFo+rfYWrUb7SsXfFo3mHlcINNAGNqVJ7y+Wxi/jGz1MBHr42ssKDhbLpb1EPtUsLIqQ3I+G28yQgT97IZ4sl44HqTTN+RETlNNkoKgUZ8xyKqDCqOVHTq+UT1QYL5bupJmMlOMiAe2Y3VkpTAG4HO2m7bSASvlGu3xlr6VGJ3NtjQcxGubF6o+jcHZplcjeRMtD/CKbs++EKHYWdB35IiRhPf8RXMj+NbyYSaPimpSENLyORml0k06l0sutljocJVNSArPD50p3cvhgy+Gd9H1Sjj7GU75h0wj0Y2DRdnqzlKfB5WF2lO/VLPc57Vy+RL3vY9zPyylq+SNQRtIADY+LpbHUbc9JhPEkMtwqCiKevahhFVIKkMapAL5JnW8S6fJdE7zIDJqwXmHD7qyVRwKFtfWflgqe2RHzEZor1YU2Pa5WFnogtabNVAoFDj5bK5EC1SMAsHbwUTSas9G/RXmAbpRvNSyZrXOfAqzMttbR3gM2jgGh1oUGbswzGtS7xgEn48kmvZay6X3dSjmD3mEqHWlfFpo6/LPVFObSRhsnQhf9Hgg2UaaN1qqaOetfnMEwV6oOnvC1EymiqVnb5Uvz+h/BITNquYDnwxOC/POzMIySrWfW7MH3h3REo319OtX76H2DD5GoPhs0HSaj2+90Qmi6jcffw3FbhIHceEhEO9UkuGZ2ERNdYghhNNRrfLUEjE3kfcgChgTcUL6AGaHBMDWRLfTV1mUhGuP7dHc5PnkQAHzssly0zg/X1nnWHSt7rXMA4vjDe2tGFX98fNjSczgcDofD4XA4HI7/I38AiuU3w//GhHwAAAAASUVORK5CYII=" alt="error"></a>
+            <a href="/"><img src="data:image/png;base64,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" alt="error"></a>
+            <a href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAACACAMAAADdy6w7AAAAZlBMVEX39/cAAAD////6+vpzc3Pw8PDQ0NDo6Ojt7e2goKC8vLy/v7/i4uLCwsJPT0/e3t5tbW2pqamJiYlZWVlfX18qKiqTk5NnZ2c+Pj56eno2NjbKysrY2NhEREQfHx+wsLAYGBgODg5KSAoBAAADjklEQVRoge2bi5aiMAyGacJFQARRUYSB4f1fcmBncFC5NCT1nN31f4HPlqZJ/lTLeus/EsKPEM2jcOPuUzs52+m+8CwwSUT0soMaaJeWCKZgUBzVkz5qM3sK5e4Z1qkK5LcUrXwc9mdPPeEdhfg0TWsViPIgnIW1ygR5ECzRlErFeFAs0+TWh1sdmtz3u+rh1FYiHiDTpKmdAA5jXZpSe/524mEZ06ty2DStU9mLfTrhTMFdmcvDbUPBqYh3WmBPoqmEt5tAOCidmLu5mU8Ez3I5u4kukaZqzm6iRiq4FysxgE/FHVi4lIq7sHAzBcq4rn8T7sWbST4qu9cGQs7CkcOclWHRo15iBSslwERfMKXThkMjn5UjLwFRCqNO3FqTVjww97LFRRQcv3CnFH6fHruwpYSeL9Al6F/TFz6sa5N1Q70UadF1g4FVpgykdzoF29d6mcZKBY+8xUQkaQW0PHe+hZX6bjfeZiYeDrG4MYZQfIzDTrVlwhVDDEeAp71lzvMrs7tvWKUFmIJ9A8Ep9mmeJHbqRx4YtU9/kNh7w+ZZb7311i3kfmUq9jqSU9aZvbuVLqedndWuA+J3CwKWtV2NZ4TPpC5RjojgRPlCNVYlwUaC2P5s19aq/Kpz5DCJCJ4/kVTHdM22DGALSye+15QaO14LBIdsc3RKVq0QkWxy9ModcoaHgmoCDLWnLRCchAFrdS0JC4Sg4dFUV1ZrLhCRbLyNSXNkCR4h0ubUFBo8cBsZmtJxrHQGkfpKF/ITdUyxpHy2faD7l0tKZnjyNKXOkzgTtJY3cV50OvA1skd5QHZmdTXWt6NnijZqO6LuuHqNnkbc9IkBRddH2uIbCp7uLSXcNGZxKhrygJlNl1U5v59P9l4e18Azczh1ia5uU1mzp7LXx211l1fgdv2Mmz5YWqHqN9RfcVSGhYuZ1DPU/bVp+rQ8ThjANkl7TkEmL5YxE54+tNbVuC2u/2SKpqniVrrI/Nb0BBGiRhp2cmcKd4iF2pFeh/k2CB3RgEiXLH+UrDYjnY7LI87Kp3TUcwRkFtiE2t05OOyQzyjvpRFi0rz8UTb1KTGiO/LmWk/JGqOqBa5aoV2udMXaLU2JNRrX83PCo7bpVyUF19HsXMbg/KnDCkX82s70tlx/9unD0XdF/e/O0N8Gvv3UBF5yP9zKe+1WP0RAL3aLMAiiwo03aP4/HjiQSc5bb/27+gKe1zIR7P9c4AAAAABJRU5ErkJggg==" alt="error">
+            </a>
+            <a href="/">Employer/Post job</a>
+        </div>  
+    </div>
+    <div id="search">
+        <input type="text" placeholder="What keyword or company">
+        <input type="text" placeholder="City,state or Company">
+        <button>Find jobs</button>
+    </div>
+
+    <div id="resume">
+        <a href="/">Post your resume</a>
+        <br>
+        <a href="/">Employer: Post a job</a>
+    </div> -->
+
+    <div id="rohit">
+        <div id="container"></div>
+        <div id="cont"></div>
+    </div>
+      
+</body>
+</html>
+<script>
+
+let data=[
+{
+    company:"Telecaller",
+    title:"Angel bizlink",
+    location:"Indore, Madhya Pradesh",
+    salary:"25,000 a month",
+    requried:"full-time",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"understand google's design principles, and always staying up to data with the latest changes to google's submission guidelines."
+
+},
+{
+    company:"E-Commerce/Catalog Specialist",
+    title:"Amazon 3.5",
+    location:"Bengaluru,Karnataka",
+    salary:"4,50,000-8,50,000 a year",
+    requried:"Full-time",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"the successful candidate will be a strong contributor to the overall vision, helping meeting the needs of the business whilst protecting the integrity of the customer experience",
+
+},
+{
+    company:"Cyber Security Experts",
+    title:"Infosys Limited 3.9",
+    location:"Bengalure, Karnataka",
+    salary:"40,000",
+    requried:"Full-time",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"Ability to work with clients to indentify business challenges and contribute to client deliverable by refining, analyzing, and structuring relevant data Awareness of latest technologies and trends",
+   
+},
+{
+    company:"FREIGHT BROKER",
+    title:"E-liv Hitech",
+    location:"Gurgaon,Haryana",
+    salary:"20,000-70,000 a month",
+    requried:"Night Shift",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"contract with freght shiping carries and negotiate the best rates and services for our customers."
+    
+},
+{
+    company:"Embroidery Designer",
+    title:"Darshan emb",
+    location:"Noida, Uttar Pradesh",
+    salary:"12,000 a month",
+    requried:"flexible shift",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"Total work:10 years (Required)"
+    
+},
+{
+    company:"Technical Editor",
+    title:"Packt Publishing",
+    location:"Mumbai, Maharashtra",
+    salary:"3,60,000 - 4,20,000 a year",
+    requried:"Full-time",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"Supporting individual development through growth opportunities and internal mobility."
+    
+},
+{
+    company:"API Integration Specialist",
+    title:"tawk.to, Inc",
+    location:"New Delhi, Delhi",
+    salary:"1,60,000-4,00,000 a month",
+    requried:"Full-time",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"Tawk.to the world #1 business messaging application is expanding its engineering team and is seeking an experienced API integrations Developer, with research and data analysis skills, to help shape",
+
+},
+{
+    company:"US Recruiter",
+    title:"DivIHN Integration, Inc 4.9",
+    location:"Remote US",
+    salary:"22,000-35,000 a month",
+    requried:"Full-time",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"Relevant experience working It and Non-IT (Mainly engineering) requirements in the US market. US Technical Recruiter (Not an HR role) Experience 6 months to 3 years.",
+
+},
+{
+    company:"US & International Tax Consultant",
+    title:"Confidential",
+    location:"Us remote work",
+    salary:"10,00,000-16,00,000 a year",
+    requried:"Full-time",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"Must be EA, CPA, Lawyer or LLM in Taxation. Must have strong writing and communication skills",
+   
+},
+{
+    company:"Botany Lecturer",
+    title:"Govindam Engineering and medical classes private",
+    location:"Bansur, Rajasthan",
+    salary:"25,000 - 1,00,000 a month",
+    requried:"Part-time",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"Part-time hours:35 per week. Total work:3 years(preferred). Your responsibility will be to teach botany on Neet(UG) level with Explaining in easy methods and by motivating students, following",
+    
+},
+{
+    company:"Social Media Manager",
+    title:"Mariam Technologies Private Ltd",
+    location:"Bengaluru, Karnataka",
+    salary:"25,000 a month",
+    requried:"Full-time",
+    condition:["Apply securely with indeed Resume","Hiring multiple candidates"],
+    descrip:"Video Editing:3 Years(required) Graphic design:3 Years(required) Creating posters: 3 years(required)",
+
+}
+
+]
+let container=document.getElementById("container")
+let cont=document.getElementById("cont");
+function getdata(){
+    data.forEach((el)=>{
+       let h2=document.createElement("h2")
+       h2.innerText=el.company;
+       let h4=document.createElement("h4")
+       h4.innerText=el.title;
+       let h41=document.createElement("h4")
+       h41.innerText=el.location;
+       let tag=document.createElement('a')
+       tag.innerText=el.salary;
+       let required=document.createElement('a')
+       required.innerText=el.requried;
+        let condition=document.createElement("h5")
+        condition.innerText=el.condition;
+       let descrip=document.createElement("p")
+       descrip.innerText=el.descrip;
+
+       let div=document.createElement("div")
+       div.setAttribute("class","left")
+       div.addEventListener("click",function(){
+        adddata(el)
+       })
+       div.append(h2,h4,h41,tag,required,condition,descrip)
+
+       container.append(div)
+    })
+}
+
+getdata(data);
+
+function adddata(data){
+   
+let jobdata=JSON.parse(localStorage.getItem("jobdata"))||[];
+jobdata.push(data);
+localStorage.setItem("jobdata",JSON.stringify(jobdata))
+showdata(jobdata)
+console.log(jobdata);
+   
+}
+
+ function showdata(jobdata){
+    cont.innerHTML=null;
+    jobdata.forEach((el)=>{
+        let h2=document.createElement("h2")
+        h2.innerText=el.company;
+        let h4=document.createElement("h4")
+        h4.innerText=el.title;
+        let h41=document.createElement("h4")
+        h41.innerText=el.location;
+        let tag=document.createElement('a')
+        tag.innerText=el.salary;
+        let required=document.createElement('a')
+        required.innerText=el.requried;
+        let condition=document.createElement("h5")
+         condition.innerText=el.condition;
+        let descrip=document.createElement("p")
+        descrip.innerText=el.descrip;
+
+        let div=document.createElement("div")
+        div.setAttribute("class","right")
+      
+        div.append(h2,h4,h41,tag,required,condition,descrip)
+
+        cont.append(div)
+    })
+    
+ }
+
+
+
+</script>
