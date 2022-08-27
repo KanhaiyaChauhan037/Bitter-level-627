@@ -181,99 +181,109 @@ background-image: ;
     border-radius: 10px;
 }
 
-#container2{
+#container2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
-   
+
+
 }
-#container2 img{
+
+#container2 img {
     border-radius: 10px;
     height: 50px;
     margin-left: 20px;
 }
 
-#continer2>div>div{
+#continer2>div>div {
     display: flex;
-    
+
 }
-.c2{
+
+.c2 {
     display: flex;
-    
-   
+
+
 }
-.c2>div{
+
+.c2>div {
     display: flex;
-   
+
 }
-#lala{
+
+#lala {
     margin-top: 100px;
 }
-.boxes{
+
+.boxes {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
     margin-left: 20px;
 }
-.c2 img{
+
+.c2 img {
     margin-top: 20px;
 }
-pre{
+
+pre {
     display: flex;
     justify-content: space-between;
 }
 
-#coll{
-   
+#coll {
+
     border-radius: 5px;
-    
+
     width: 100%;
 }
 
-#g{
+#g {
     display: flex;
-    
+
 }
 
-#im{
+#im {
     border-radius: 10px;
     margin-right: 20px;
-   
+
 }
-#f{
+
+#f {
     /* border: 1px solid black; */
-   width: 60%; 
-  
+    width: 60%;
+
 }
 
 
- #d{
+#d {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     border-radius: 5px;
     padding: 10px;
     display: flex;
     margin-top: 10px;
-   
-  
- }
 
- #g{
+
+}
+
+#g {
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     width: 30%;
     margin: auto;
     color: blue;
- }
- #g:hover{
-    text-decoration: underline;
- }
+}
 
- #tit{
-    font-family:fantasy;
- }
- #rat{
+#g:hover {
+    text-decoration: underline;
+}
+
+#tit {
+    font-family: fantasy;
+}
+
+#rat {
     color: purple;
-   
- }
+
+}
