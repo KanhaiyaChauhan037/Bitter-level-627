@@ -22,7 +22,10 @@ body {
     margin-bottom: 1%;
 
 }
-
+P>a{
+    text-decoration: none;
+    color: white;
+}
 #navbar img {
     width: 80px;
     height: 40px;
