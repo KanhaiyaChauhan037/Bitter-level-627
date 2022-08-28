@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #main{
+      display: flex;
+      border: 1px solid red;
+      width: 90%;
+      margin: auto;
+      margin-top: 150px;
+      margin-bottom: 10px;
+      gap: 10px;
+      padding: 20px;
+    }
+    #main>div{
+      width: 50%;
+    }
+    #container{
+      margin: 20px;
+
+    }
+    #container>div{
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+    }
+    #container>div>h4{
+      color: #2d2d48;
+    }
+    #container>div>a{
+      margin-right: 20px;
+      padding: 6px;
+      border-radius: 5px;
+      background-color: #eeebe4;
+      font-weight: bold;
+      color:#595959 ;
+      cursor: pointer;
+    }
+    #container>div>p{
+      color: #595959;
+    }
+    #container>div>a:hover{
+      background-color: #15a2b7;
+    }
+    #count{
+      width: 50%;
+      height: 700px;
+      margin-top: 20px;
+      overflow: scroll;
+    }
+    #count>div{
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      margin: 20px;
+      padding: 30px;
+    }
+    #count>div>h4{
+      color: #2d2d48;
+    }
+    #count>div>p{
+      color: #595959;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="container"></div>
+    <div id="count"></div>
+  </div>
+</body>
+</html>
+<script src="jobs.js"></script>
