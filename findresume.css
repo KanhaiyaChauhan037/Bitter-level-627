@@ -15,6 +15,7 @@
 
 }
 
+
 #box>input:nth-child(2) {
     width: 550px;
     height: 7vh;
@@ -91,6 +92,7 @@ hr {
 
 }
 
+
 #box3-1>button:hover {
 
     background-color: rgb(217, 228, 246);
@@ -135,4 +137,17 @@ hr {
 }
 #seh>h4{
     font-size: 15px;
+}
+
+#se{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #2557a7;
+    color: white;
+    border: none;
+  cursor: pointer; 
+   
 }

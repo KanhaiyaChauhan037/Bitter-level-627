@@ -12,11 +12,13 @@ function navbar(){
     <div id="second">
         <p>Help Center</p>
         <p>|</p>
-        <button>Sign in</button>
+        <button> <a href="sign-in1.html">Sign in</a> </button>
+       
         <p>|</p>
-        <p>Find jobs</p>
+        <p> <a href="index.html">Find jobs</a></p>
+       
     </div>
 </div>`
-}
+};
 
 export default navbar;

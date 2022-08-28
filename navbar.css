@@ -34,6 +34,11 @@ P>a{
 
 }
 
+ button>a{
+    text-decoration: none;
+    color: white;
+ }
+
 #first {
     width: 40%;
     display: flex;

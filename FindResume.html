@@ -24,7 +24,7 @@
             alt="">
         <input type="text" placeholder="What Job title, skills, or company">
         <input type="text" placeholder="Where City,state,or pincode">
-        <div><button>Search</button></div>
+       <button id="se"> <a href="findjob.html">Search</a></button>
 
     </div>
     <div id="box1">
@@ -45,7 +45,7 @@
         <div id="box3-1">
             <h3>Start your free Professional trial today</h3>
             <p>View millions of global CVs for 14 days. Contact up to 20 candidates.</p>
-            <button>Get started</button>
+            <button id="get">Get started</button>
         </div>
         <div>
             <img id="ser"
@@ -92,6 +92,12 @@
 
     import navbar from "./components/navbar.js";
     document.getElementById("navbar").innerHTML = navbar();
+
+   
+ document.getElementById("get").addEventListener("click",function(){
+        window.location.href="sign-in1.html";
+ })
+
 </script>
 
 </html>

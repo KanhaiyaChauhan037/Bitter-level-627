@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOB SEARCH INDIA</title>
+    <link rel="stylesheet" href="newNav.css">
     <style>
         /* --------------------------------NAVBAR-------------------------------- */
         * body {
@@ -13,58 +14,8 @@
             padding: 0px;
             background-color: #faf9f8;
             /* width: 100%; */
-        }
 
-        #navbar {
-            display: flex;
-            grid-template-columns: repeat(2, 1fr);
-            width: 100%;
-            justify-content: space-between;
-            margin: auto;
-            align-items: center;
-            font-size: 18px;
-            padding: 4px 0px;
-            border-bottom: 1px solid gray;
-            background-color: #FFFFFF;
-            /* position: relative; */
-        }
-
-        #img1 {
-            width: 150px;
-            height: 50px;
-            padding: 5px;
-        }
-
-        #img2 {
-            width: 48 px;
-            height: 48px;
-            padding: 5px;
-            margin-left: -20px;
-        }
-
-        p1 {
-            margin-top: 25px;
-            color: rgb(80, 79, 79);
-
-        }
-
-        #first {
-            display: flex;
-            gap: 30px;
-            margin-left: 20px;
-        }
-
-        #second {
-            display: flex;
-            gap: 30px;
-            margin-right: 20px;
-            margin-bottom: 10px;
-
-        }
-
-        p1:hover {
-            border-bottom: 2px solid rgb(11, 11, 141);
-            cursor: pointer;
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
         }
 
         /*------------------------------------- BODY PART----------------------------------- */
@@ -315,7 +266,65 @@
         }
 
 
-     
+        #main{
+      display: flex;
+      /* border: 1px solid red; */
+      width: 90%;
+      margin: auto;
+      margin-top: 160px;
+      margin-bottom: -13%;
+      gap: 10px;
+      padding: 20px;
+      
+    }
+    #main>div{
+      width: 50%;
+    }
+    #container{
+      margin: 20px;
+
+    }
+    #container>div{
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+    }
+    #container>div>h4{
+      color: #2d2d48;
+    }
+    #container>div>a{
+      margin-right: 20px;
+      padding: 6px;
+      border-radius: 5px;
+      background-color: #eeebe4;
+      font-weight: bold;
+      color:#595959 ;
+      cursor: pointer;
+    }
+    #container>div>p{
+      color: #595959;
+    }
+    #container>div>a:hover{
+      background-color: #15a2b7;
+    }
+    #count{
+      width: 50%;
+      height: 700px;
+      margin-top: 20px;
+      overflow: scroll;
+    }
+    #count>div{
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      margin: 20px;
+      padding: 30px;
+    }
+    #count>div>h4{
+      color: #2d2d48;
+    }
+    #count>div>p{
+      color: #595959;
+    }
        
     </style>
 </head>
@@ -325,11 +334,11 @@
 
     <body>
         <div id="navbar">
-            <div id="first">
-              <a href="index.html"><img id="img1" src="https://1000logos.net/wp-content/uploads/2021/05/Indeed-logo.png" alt="error"> </a>  
-             <a href="index.html"> <img id="img2"
-              src="https://d3fw5vlhllyvee.cloudfront.net/dist/header/ukraine_support.7ad2b5d444bc427dbc5d.png"
-              alt=""></a>  
+            <!-- <div id="first">
+           <a href="index.html"> <img id="img1" src="https://1000logos.net/wp-content/uploads/2021/05/Indeed-logo.png" alt="error"></a>    
+          <a href="index.html">  <img id="img2"
+            src="https://d3fw5vlhllyvee.cloudfront.net/dist/header/ukraine_support.7ad2b5d444bc427dbc5d.png"
+            alt=""></a>    
                 <p1 onclick="findJob()">Find jobs</p1>
                 <p1 onclick="company()">Company reviews</p1>
                 <p1 onclick="salary()">Salary Guide</p1>
@@ -339,82 +348,15 @@
                 <p1 onClick="singin()">Sign in</p1>
                 <p1>|</p1>
                 <p1 onclick="employers()">Employers / Post Job</p1>
-            </div>
+            </div> -->
         </div>
 
-        <!--------------------------------------BODY PART ------------------------------------>
-        <div id="third">
-            <div class="third1">
-                <!-- <input type="text" placeholder="  What    Job title, keyboards, or company"> -->
-                <div class="dropdown">
-                     <input type="text" class="dropbtn" placeholder="  What    Job title, keyboards, or company">
-                    <div class="dropdown-content">
-                        <p id="email"></p>
-                        <a href="#">Work from Home</a>
-                        <a href="#">Fresher</a>
-                        <a href="#">Fresher Job Vacancy</a>
-                        <a href="#">Work From Home Part time</a>
-                        <a href="#">Part time</a>
-                        <a href="#">Software developer</a>
-                        
-                    </div>
-                </div>
-
-                <!-- <input type="text" placeholder=" Where     City, or pin code"> -->
-
-                <div class="dropdown">
-                    <input type="text" class="dropbtn" placeholder=" Where     City, or pin code">
-                   <div class="dropdown-content">
-                       <p id="email"></p>
-                       <a href="#">Delhi</a>
-                       <a href="#">Noida, Uttar Pradesh</a>
-                       <a href="#">Gurgaon, Harayana</a>
-                       <a href="#">NCR Delhi</a>
-                       <a href="#">Chandigarh</a>
-                       <a href="#">Faridabad, Harayana</a>
-                       <a href="#">New Delhi</a>
-                     
-                   </div>
-               </div>
-                <button id="btn">Find Jobs</button>
-            </div>
-
-      
-           
-        
-            
 
 
-            <div class="third2">
-
-                <p class="p1"><span>Post your resume - </span>It only takes a few seconds</p>
-                <p class="p1"><span>Employers: Post a job -</span>Your next hire is here</p>
-
-            </div>
-
-            <div id="forth">
-                <h1>popular searches</h1>
-                <div>
-                    <!-- <button style="margin-top: -20px;">software developer fresher</button> -->
-                    <button>Work from Home</button>
-                    <button>driver</button>
-                    <button>hr fresher</button>
-                    <button>software testing</button>
-                    <button>sales executive</button>
-                </div>
-                <div>
-
-                    <button>business analyst</button>
-                    <button>receptionist</button>
-                    <button>data analyst</button>
-                    <button>seo executive</button>
-                </div>
-            </div>
-        </div>
-        <!-- <div id="main">
+        <div id="main">
             <div id="container"></div>
             <div id="count"></div>
-          </div> -->
+          </div>
  
         <!--------------------------------------footer. ------------------------------------>
         <div id="bottom">
@@ -459,29 +401,29 @@
 
 </html>
 
-<script>
+<script src="jobs.js" type="module" >
 
 
-    let findJob = () => {
-        location.href = "findjob.html";
 
-    }
-    let company = () => {
-        location.href = "companyReview.html";
-    }
-    let salary = () => {
-        location.href = "salary.html";
-    }
-    let Post = () => {
-        location.href = "#";
-    }
-    let employers = () => {
-        location.href = "employers.html";
-    }
+    // let findJob = () => {
+    //     location.href = "#"
+    // }
+    // let company = () => {
+    //     location.href = "companyReview.html";
+    // }
+    // let salary = () => {
+    //     location.href = "salary.html";
+    // }
+    // let Post = () => {
+    //     location.href = "#";
+    // }
+    // let employers = () => {
+    //     location.href = "employers.html";
+    // }
 
-    let singin = () => {
-    location.href = "sign-in1.html";
-    };
+    // let singin = () => {
+    // location.href = "sign-in1.html";
+    // };
 
    
 </script>

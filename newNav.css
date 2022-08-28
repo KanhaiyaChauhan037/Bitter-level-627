@@ -1,0 +1,142 @@
+.dropbtn {
+  /* background-color: #04AA6D; */
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #f1f1f1; */
+  min-width: 230px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(188, 181, 181);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #c1ecc2;
+}
+
+#navbar {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  font-size: 18px;
+  padding: 4px 0px;
+  border-bottom: 1px solid gray;
+  background-color: #FFFFFF;
+  height: 50px;
+  /* position: relative; */
+
+}
+
+#img1 {
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+#img2 {
+  width: 48 px;
+  height: 48px;
+  padding: 5px;
+  margin-left: -20px;
+  border: none;
+}
+
+p1 {
+  margin-top: 25px;
+  color: rgb(80, 79, 79);
+
+}
+
+#first {
+  display: flex;
+  gap: 30px;
+  margin-left: 20px;
+  /* padding-bottom: 5px; */
+  /* align-items: center; */
+}
+
+#second {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+
+}
+
+#second>p1 {
+  margin-top: -1%;
+}
+
+#first>p1 {
+  margin-top: 20px;
+}
+
+p1:hover {
+  border-bottom: 4px solid rgb(11, 11, 141);
+  cursor: pointer;
+}
+
+#second>img:nth-child(1) {
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+}
+
+#second>img:nth-child(2) {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.dropdown>img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+p1>a {
+  text-decoration: none;
+  color: black;
+}
+
+#sigb {
+  color: rgb(20, 20, 138);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}

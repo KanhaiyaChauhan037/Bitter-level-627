@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            /* border: 1px solid red; */
+            width: 55%;
+            margin: auto;
+        }
+
+        .main {
+            display: flex;
+            border-radius: 6px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            height: 60px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+        }
+
+        .main:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        .mains {
+            width: 400px;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .about>h3 {
+            /* margin-top: -1px; */
+        }
+
+        .sub {
+
+            width: 350px;
+            display: flex;
+            margin-top: -40px;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .pic>img {
+            width: 35px;
+            margin-top: 7px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+
+        .saldi {}
+
+        .saldi>p {
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        .arrow>img {
+            margin-top: 30px;
+            width: 20px;
+        }
+
+        .lastdiv {
+            display: flex;
+            justify-content: space-around;
+            width: 150px;
+        }
+
+        .head {
+            margin-left: 17.5%;
+
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+        }
+
+        /* *******************************************boxxx*************************************************************************************** */
+        #boxx {
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+            background-color: #f9f9f9;
+            width: 100%;
+
+        }
+
+        #small {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            width: 65%;
+            margin: auto;
+            padding: 10px;
+
+            display: flex;
+            border-radius: 0px 0px 6px 6px;
+        }
+
+        #mini {
+            width: 300px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        #mini>h1 {
+            font-size: 42px;
+        }
+
+        #smallbox2 {
+            margin-left: 60px;
+        }
+
+        #smallbox1 {
+            margin-left: 20px;
+        }
+
+        #smallbox1>p {
+            margin-top: -10px;
+        }
+
+        #smallbox1>h2 {
+            margin-top: 40px;
+        }
+
+        #smallbox2>p {
+            margin-top: -15px;
+        }
+
+        #strip {
+            width: 66.5%;
+            height: 8px;
+            margin: auto;
+            border-radius: 6px 6px 0px 0px;
+
+            background-color: #085ff7;
+        }
+
+        #faltu {
+            margin-left: 17.5%;
+            margin-bottom: 20px;
+        }
+
+        #faltu>p {
+            margin-top: -10px;
+        }
+
+        #faltu>select {
+            width: 120px;
+            height: 40px;
+            border-radius: 5px;
+            padding: 8px;
+            font-size: 17px;
+        }
+
+        /* ***************************************************sakshi********************************************************* */
+        #cities {
+            font-size: 12px;
+            margin-left: 6%;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+        }
+
+        #cities>h1 {
+            font-size: 30px;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+            font-weight: 700;
+            margin-left: 15%;
+            margin-top: 50px;
+        }
+
+        #cities>div {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        #citi1 {
+            width: 45%;
+
+
+        }
+
+        #citi2 {
+            width: 45%;
+
+        }
+
+        .citi3 {
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 10px;
+        }
+
+        .citi4 {
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 10px;
+
+        }
+
+        .citi3:hover {
+            background-color: #1d5de7;
+            color: white;
+        }
+
+        .citi4:hover {
+            background-color: #1d5de7;
+            color: white;
+        }
+
+        .h2 {
+            color: white;
+            background-color: black;
+            border-radius: 50%;
+            margin-top: 35px;
+            width: 6%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            text-align: center;
+
+        }
+
+        .h3 {
+            margin-top: 40px;
+            font-size: 26px;
+        }
+
+        /* **************************************footer******************************************************************************** */
+        #footer {
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+            margin-top: 60px;
+            width: 95%;
+            justify-content: space-around;
+            padding: 40px;
+            display: flex;
+            background-color: #eff2f6;
+        }
+
+        /* **********************************************blkfoot***************************************************************************** */
+        #foot {
+            background-color: black;
+            padding: 30px;
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+        }
+
+        #blkfoot {
+            border: 1px solid black;
+            background-color: black;
+            padding: 40px;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+            width: 95%;
+        }
+
+        #first>img {
+            margin-top: 6px;
+            width: 180px;
+        }
+
+        #third {
+            margin-top: 43px;
+        }
+
+        #fourth {
+            margin-top: 43px;
+        }
+
+        #fifth>div {
+            width: 160px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #im1 {
+            width: 20px;
+        }
+
+        #im2 {
+            width: 25px;
+        }
+
+        #im3 {
+            width: 18px;
+        }
+
+        #im4 {
+            width: 20px;
+            height: 25px;
+        }
+
+        #anchor {
+            width: 50%;
+            margin-left: 170px;
+            background-color: black;
+        }
+
+        #anchor>a {
+            color: white;
+        }
+
+        #abc {
+            text-decoration: none;
+        }
+
+        /* *****************************************************bb2*************************************************** */
+        #bb2 {
+            display: flex;
+            width: 87%;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 10px;
+            margin-top: 80px;
+        }
+
+        #bb2>h1 {
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+        }
+
+        #rat {
+            /* border: 1px solid; */
+            width: 330px;
+
+        }
+
+        #smile {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #rs {
+            display: flex;
+            font-size: 12px;
+            justify-content: space-between;
+            font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
+        }
+
+
+        #navbar {
+            display: flex;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            justify-content: space-between;
+            margin: auto;
+            align-items: center;
+            font-size: 18px;
+            /* padding: 4px 0px; */
+            border-bottom: 1px solid gray;
+            background-color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        #img11 {
+
+            padding: 5px;
+        }
+
+        #img12 {
+
+            padding: 5px;
+            margin-left: -20px;
+        }
+
+        p1 {
+            margin-top: 25px;
+            color: rgb(80, 79, 79);
+
+        }
+
+        #first {
+            display: flex;
+            gap: 30px;
+            margin-left: 20px;
+        }
+
+        #first>img {
+            width: 90px;
+            height: 50px;
+        }
+
+        #second {
+            display: flex;
+            gap: 30px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+
+        }
+
+        p1:hover {
+            border-bottom: 2px solid rgb(11, 11, 141);
+            cursor: pointer;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <div id="first">
+          <a href="index.html"><img id="img11" style="width: 90px; height: 50px;"
+            src="https://1000logos.net/wp-content/uploads/2021/05/Indeed-logo.png" alt="error"></a>  
+         <a href="index.html"> <img id="img12" style="width: 50px; height: 50px;"
+            src="https://d3fw5vlhllyvee.cloudfront.net/dist/header/ukraine_support.7ad2b5d444bc427dbc5d.png" alt=""></a>  
+            <p1 onclick="findJob()">Find jobs</p1>
+            <p1 onclick="company()">Company reviews</p1>
+            <p1 onclick="salary()">Salary Guide</p1>
+        </div>
+        <div id="second">
+            <p1 onclick="Post()">Post your resume</p1>
+            <p1 onClick="singin()">Sign in</p1>
+            <p1>|</p1>
+            <p1 onclick="employers()">Employers / Post Job</p1>
+        </div>
+    </div>
+
+
+    <div id="boxx">
+        <div id="faltu">
+            <h1>IT Recruiter salary in India</h1>
+            <p>How much does an IT Recruiter make in India?</p>
+            <select name="" id="">
+                <option value="">Per Year</option>
+                <option value="">Per Month</option>
+                <option value="">Per Week</option>
+                <option value="">Per Day</option>
+            </select>
+        </div>
+
+        <div id="strip"></div>
+        <div id="small">
+
+            <div id="smallbox1">
+                <h2>Average base salary</h2>
+                <p>2.9k salaries reported, updated at 24 August 2022</p>
+            </div>
+            <div id="smallbox2">
+                <div id="mini">
+                    <h1>₹2,97,281</h1>
+                    <h3>per year</h3>
+                </div>
+                <p>The average salary for a it recruiter is ₹2,97,281 per year in India.</p>
+            </div>
+        </div>
+    </div>
+    <h1 class="head">Top companies for IT Recruiters in India</h1>
+    <div id="container"></div>
+    <!-- ***********************************************bb2********************************************************************************** -->
+    <div id="bb2">
+        <h1>Was this page helpful?</h1>
+        <div id="rat">
+            <div id="smile">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgZmlsbD0iIzI1NTdBNyIgc3Ryb2tlPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMjQgMjVjMC0zLjMxNC0zLjEzNC02LTctNnMtNyAyLjY4Ni03IDZoMTR6Ii8+PGNpcmNsZSBjeD0iMTEiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxjaXJjbGUgY3g9IjI0IiBjeT0iMTQiIHI9IjMiIGZpbGw9IiNGRkYiLz48L2c+PC9zdmc+"
+                    alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgZmlsbD0iIzI1NTdBNyIgc3Ryb2tlPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjE0IiByPSIzIiBmaWxsPSIjRkZGIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMjMuNSAyNS41ODVDMjIuMjk1IDIzLjQ4IDE5Ljk4MiAyMiAxNy4zOCAyMmE2Ljk5OSA2Ljk5OSAwIDAwLTYuMTc1IDMuNzAyIi8+PC9nPjwvc3ZnPg=="
+                    alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgc3Ryb2tlPSIjMjU1N0E3IiBmaWxsPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjE0IiByPSIzIiBmaWxsPSIjRkZGIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTEgMjQuNWgxMiIvPjwvZz48L3N2Zz4="
+                    alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgc3Ryb2tlPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiMyNTU3QTciLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjE0IiByPSIzIiBmaWxsPSIjRkZGIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxwYXRoIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTEgMjIuMTE3YzEuMjA3IDIuMTA1IDMuNTIgMy41ODUgNi4xMiAzLjU4NUE2Ljk5OSA2Ljk5OSAwIDAwMjMuMjk2IDIyIi8+PC9nPjwvc3ZnPg=="
+                    alt="">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSIxNiIgc3Ryb2tlPSIjMjU1N0E3IiBmaWxsPSIjMjU1N0E3IiBzdHJva2Utd2lkdGg9IjIiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjE0IiByPSIzIiBmaWxsPSIjRkZGIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIxNCIgcj0iMyIgZmlsbD0iI0ZGRiIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMCAyMGMwIDMuMzE0IDMuMTM0IDYgNyA2czctMi42ODYgNy02SDEweiIvPjwvZz48L3N2Zz4="
+                    alt="">
+
+            </div>
+            <div id="rs">
+                <p>Not helpful</p>
+                <p>Helpful</p>
+                <p>Very helpful</p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ********************************************sakshi********************************************************************************* -->
+    <div id="cities">
+        <h1>Highest paying cities in India for IT Recruiters</h1>
+        <div>
+
+            <div id="citi1">
+                <div class="citi3">
+                    <h2 class="h2" style="margin-left: -10px;">1</h2>
+                    <div>
+                        <h2>Navi Mumbai</h2>
+                        <p>22 salaries Reported</p>
+                    </div>
+                    <div>
+                        <h2>21,469</h2>
+                        <p>Per Month</p>
+                    </div>
+                    <h3 class="h3">></h3>
+                </div>
+                <div class="citi3">
+                    <h2 class="h2" style="margin-left: -10px;">2</h2>
+                    <div>
+                        <h2>New Delhi,Delhi</h2>
+                        <p>22 salaries Reported</p>
+                    </div>
+                    <div>
+                        <h2>19,456</h2>
+                        <p>Per Month</p>
+                    </div>
+                    <h3 class="h3">></h3>
+                </div>
+                <div class="citi3">
+                    <h2 class="h2">3</h2>
+                    <div>
+                        <h2>Hyderabad,Telangana</h2>
+                        <p>22 salaries Reported</p>
+                    </div>
+                    <div>
+                        <h2>18,501</h2>
+                        <p>Per Month</p>
+                    </div>
+                    <h3 class="h3">></h3>
+                </div>
+                <div class="citi3">
+                    <h2 class="h2">4</h2>
+                    <div>
+                        <h2>Bengaluru,Karnataka</h2>
+                        <p>22 salaries Reported</p>
+                    </div>
+                    <div>
+                        <h2>18,284</h2>
+                        <p>Per Month</p>
+                    </div>
+                    <h3 class="h3">></h3>
+                </div>
+
+            </div>
+            <div id="citi2">
+                <div class="citi4">
+                    <h2 class="h2">5</h2>
+                    <div>
+                        <h2>Noida,Uttarpradesh</h2>
+                        <p>22 salaries Reported</p>
+                    </div>
+                    <div>
+                        <h2>17,723</h2>
+                        <p>Per Month</p>
+                    </div>
+                    <h3 class="h3">></h3>
+                </div>
+                <div class="citi4">
+                    <h2 class="h2">6</h2>
+                    <div>
+                        <h2>Mumbai,Maharshatra</h2>
+                        <p>22 salaries Reported</p>
+                    </div>
+                    <div>
+                        <h2>17,338</h2>
+                        <p>Per Month</p>
+                    </div>
+                    <h3 class="h3">></h3>
+                </div>
+                <div class="citi4">
+                    <h2 class="h2">7</h2>
+                    <div>
+                        <h2>Thane,Maharshatra</h2>
+                        <p>22 salaries Reported</p>
+                    </div>
+                    <div>
+                        <h2>16,998</h2>
+                        <p>Per Month</p>
+                    </div>
+                    <h3 class="h3">></h3>
+                </div>
+                <div class="citi4">
+                    <h2 class="h2">8</h2>
+                    <div>
+                        <h2>Kalkata,West Brngal</h2>
+                        <p>22 salaries Reported</p>
+                    </div>
+                    <div>
+                        <h2>16.358</h2>
+                        <p>Per Month</p>
+                    </div>
+                    <h3 class="h3">></h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- **************************************************sakshi end*********************************************************** -->
+    <!-- ****************************************************footer***************************************************************** -->
+    <div id="footer">
+        <h2>Frequently searched careers</h2>
+        <div>
+            <p><a href="">Security Guard</a></p>
+            <p><a href="">Software Engineer</a></p>
+            <p><a href="">Accountant</a></p>
+            <p><a href="">Data Entry Clerk</a></p>
+            <p><a href="">Driver</a></p>
+            <p><a href="">Teacher</a></p>
+            <p><a href="">Nurse</a></p>
+            <p><a href="">Laboratory Technician</a></p>
+
+        </div>
+        <div>
+            <p><a href="">Full Stack Developer</a></p>
+            <p><a href="">Physiotherapist</a></p>
+            <p><a href="">Back Office Executive</a></p>
+            <p><a href="">Assistant Professor</a></p>
+            <p><a href="">CNC Operator</a></p>
+            <p><a href="">Electrical Engineer</a></p>
+            <p><a href="">Radiologist</a></p>
+            <p><a href="">Medical Representative</a></p>
+
+        </div>
+        <div>
+            <p><a href="">Data Analyst</a></p>
+            <p><a href="">Web Developer</a></p>
+            <p><a href="">Collector</a></p>
+            <p><a href="">Office Assistant</a></p>
+            <p><a href="">Police Officer</a></p>
+            <p><a href="">Flight Attendant</a></p>
+            <p><a href="">School Teacher</a></p>
+            <p><a href="">Medical Officer</a></p>
+
+        </div>
+
+    </div>
+    <!-- ******************************************************** -->
+    <div id="foot">
+
+
+        <div id="blkfoot">
+            <div id="first">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+
+            <div id="sec">
+                <h3>Explore Indeed</h3>
+                <p>Career Explorer</p>
+                <p>Career Advice</p>
+                <p>Browse Jobs</p>
+
+            </div>
+            <div id="third">
+                <p>Browse Companies</p>
+                <p>Salaries</p>
+                <p>Indeed Events</p>
+
+            </div>
+            <div id="fourth">
+                <p>Work at Indeed</p>
+                <p>Countries</p>
+                <p>About</p>
+
+            </div>
+            <div id="fifth">
+                <h3>Follow us</h3>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT05zJ_zxvRVks8t2ItseL2pXgPbtppviuOVw&usqp=CAU"
+                        alt="" id="im1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_nF50viKz0HPd6HccEJkgv9ch7irQCqhddA&usqp=CAU"
+                        alt="" id="im2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhYoprKESBLKqTWJca8aRpOfh5ueUwqRAKMg&usqp=CAU"
+                        alt="" id="im3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt28Tjz9teES372ssbDkE2ID6AFLfNBIv1aw&usqp=CAU"
+                        alt="" id="im4">
+                </div>
+            </div>
+
+        </div>
+        <div id="anchor">
+            <a id="abc" href="">© 2021 Indeed</a> - <a
+                href="https://in.indeed.com/accessibility?hl=en&from=gnav-title-webapp">Accessibility at Indeed</a> - <a
+                href="">Privacy Center</a> - <a href="">Cookies</a> - <a href="">Privacy</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script>
+    let me = [
+        {
+            image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/acfc069b6351c9d83b5b58e07ccb6f49`,
+            title: "Maersk",
+            rating: `★★★★☆`,
+            sal: "₹3,24560",
+            que: "10 reviews",
+            repo: "5 Salaries Reported",
+        },
+        {
+            image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/7502c4fab3c11f90ed12b06b5e7b138d`,
+            title: "Bosch",
+            rating: `★★★★☆`,
+            sal: "₹3,24560",
+            reviews: "10 reviews",
+            repo: "5 Salaries Reported",
+        },
+        {
+            image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/46105bb1392fe4bdf5127cb50b19e04c`,
+            title: "Ride.Swiegy",
+            rating: `★★★★☆`,
+            sal: "₹3,24560",
+            que: "10 reviews",
+            repo: "5 Salaries Reported",
+        },
+        {
+            image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/bf30169effaccda27699b204e40e0dbb`,
+            title: "WNS Global Services",
+            rating: `★★★★☆`,
+            sal: "₹3,24560",
+            que: "10 reviews",
+            repo: "5 Salaries Reported",
+        },
+        {
+            image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/13b693b4dcc055d2344351b4c9a148e9`,
+            title: "TCS",
+            rating: `★★★★☆`,
+            sal: "₹3,24560",
+            que: "10 reviews",
+            repo: "5 Salaries Reported",
+        },
+        {
+            image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/e6c5eda7fc206158e9a85cd706f7ae9f`,
+            title: "Muthoot Finance",
+            rating: `★★★★☆`,
+            sal: "₹3,24560",
+            que: "10 reviews",
+            repo: "5 Salaries Reported",
+        },
+        {
+            image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/e76988dd6c8bf19022d480ba7814316d`,
+            title: "Virtusa",
+            rating: `★★★★☆`,
+            sal: "₹3,24560",
+            que: "10 reviews",
+            repo: "5 Salaries Reported",
+        },
+        {
+            image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/806ab4e587375ca09afa57492b509707`,
+            title: "Sutherland",
+            rating: `★★★★☆`,
+            sal: "₹3,24560",
+            que: "10 reviews",
+            repo: "5 Salaries Reported",
+        },
+        {
+            image: `https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/64x64/e8ac3849c7ac343c0b4495df46906cd2`,
+            title: "Honeywell",
+            rating: `★★★★☆`,
+            sal: "₹3,24560",
+            que: "10 reviews",
+            repo: "5 Salaries Reported",
+        }
+    ];
+    append(me);
+    function append(data) {
+        data.forEach((el) => {
+            let divm = document.createElement("div");
+            divm.setAttribute("class", 'main');
+
+            let divms = document.createElement("div");
+            divms.setAttribute("class", 'mains');
+
+            let divs = document.createElement("div");
+            divs.setAttribute("class", 'pic');
+            let image = document.createElement("img");
+            image.src = el.image;
+
+            let div2 = document.createElement("div");
+            div2.setAttribute("class", 'about');
+            let title = document.createElement("h3");
+            title.innerText = el.title;
+            let subdiv = document.createElement("div");
+            subdiv.setAttribute("class", 'sub');
+            let rate = document.createElement("h3");
+            rate.innerText = el.rating;
+            let que = document.createElement("p");
+            que.innerText = el.que;
+            let report = document.createElement("p");
+            report.innerText = el.repo;
+
+            let lastdiv = document.createElement("div");
+            lastdiv.setAttribute("class", 'lastdiv');
+
+            let saldiv = document.createElement("div");
+            saldiv.setAttribute("class", 'saldi');
+            let salary = document.createElement("h3");
+            salary.innerText = el.sal;
+            let para = document.createElement("p");
+            para.innerText = "per year"
+
+            let arrow = document.createElement("div");
+            arrow.setAttribute("class", 'arrow');
+            let aro = document.createElement("img");
+            aro.src = " https://media.istockphoto.com/vectors/right-arrow-pixel-perfect-gradient-linear-ui-icon-vector-id1410274279?k=20&m=1410274279&s=612x612&w=0&h=BInbA3lznXwZ2TPpFNoj8osSweZHIppEq5rwxjloG8g=";
+
+            subdiv.append(rate, que, report);
+            div2.append(title, subdiv);
+            divs.append(image);
+            saldiv.append(salary, para);
+            divms.append(divs, div2)
+            arrow.append(aro);
+            lastdiv.append(saldiv, arrow)
+            divm.append(divms, lastdiv);
+            document.getElementById("container").append(divm);
+
+
+        })
+
+    }
+    let findJob = () => {
+        location.href = "#"
+    }
+    let company = () => {
+        location.href = "companyReview.html";
+    }
+    let salary = () => {
+        location.href = "salary.html";
+    }
+    let Post = () => {
+        location.href = "#";
+    }
+    let employers = () => {
+        location.href = "employers.html";
+    }
+
+    let singin = () => {
+    location.href = "sign-in1.html";
+    };
+</script>

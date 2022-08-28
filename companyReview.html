@@ -7,10 +7,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find The Best Company</title>
     <link rel="stylesheet" href="./style/style.css">
-    <style></style>
+    <style>
+            #navbar {
+            display: flex;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            justify-content: space-between;
+            margin: auto;
+            align-items: center;
+            font-size: 18px;
+            padding: 4px 0px;
+            border-bottom: 1px solid gray;
+            background-color: #FFFFFF;
+            /* position: relative; */
+            margin-bottom:-10% ;
+        }
+
+        #img1 {
+            width: 150px;
+            height: 50px;
+            padding: 5px;
+        }
+
+        #img2 {
+            width: 48 px;
+            height: 48px;
+            padding: 5px;
+            margin-left: -20px;
+        }
+
+        p1 {
+            margin-top: 25px;
+            color: rgb(80, 79, 79);
+
+        }
+
+        #first {
+            display: flex;
+            gap: 30px;
+            margin-left: 20px;
+        }
+
+        #second {
+            display: flex;
+            gap: 30px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+
+        }
+
+        p1:hover {
+            border-bottom: 2px solid rgb(11, 11, 141);
+            cursor: pointer;
+        }
+      
+    </style>
 </head>
 
 <body>
+    <div id="navbar">
+        <div id="first">
+        <a href="index.html">  <img id="img1" src="https://1000logos.net/wp-content/uploads/2021/05/Indeed-logo.png" alt="error"> </a>  
+           <a href="index.html"> <img id="img2"
+            src="https://d3fw5vlhllyvee.cloudfront.net/dist/header/ukraine_support.7ad2b5d444bc427dbc5d.png"
+            alt=""></a>
+            <p1 onclick="findJob()">Find jobs</p1>
+            <p1 onclick="company()">Company reviews</p1>
+            <p1 onclick="salary()">Salary Guide</p1>
+        </div>
+        <div id="second">
+            <p1 onclick="Post()">Post your resume</p1>
+            <p1 onClick="singin()">Sign in</p1>
+            <p1>|</p1>
+            <p1 onclick="employers()">Employers / Post Job</p1>
+        </div>
+    </div>
+
     <div id="h1">
         <h1 id="heading">Find great places to work</h1>
         <h2 id="access">Get access to millions of company reviews</h2>
@@ -19,7 +91,7 @@
             <input id="input">
             <button id="find" type="submit"><a href="./find.html">Find Companies</a></button>
         </div>
-        <h4 id="h4"><a href="">Do you want to search for salaries?</a></h4>
+        <h4 id="h4"><a href="salary.html">Do you want to search for salaries?</a></h4>
         <div id="companies">
             <h1>Popular companies</h1>
             <div id="container1"></div>
@@ -167,4 +239,8 @@
 
 </html>
 
-<script src="./companyReview.js"></script>
+<script src="./companyReview.js">
+
+
+ 
+</script>
